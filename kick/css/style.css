@@ -1,0 +1,272 @@
+/* FONT */
+
+@font-face {
+	font-family: FS Emeric-Book;
+	src:url('../fonts/FS-Emeric-Book.otf');
+
+}
+
+@font-face {
+	font-family: FS Emeric-SemiBold;
+	src:url('../fonts/FS-Emeric-SemiBold.otf');
+
+	
+}
+
+@font-face {
+	font-family: FS Emeric-Bold;
+	src:url('../fonts/FS-Emeric-Bold.otf');
+	
+}
+
+/* GENERAL */
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1 {
+	font-size: 70pt;
+	font-family: FS Emeric-Bold;
+	color: #3bbf54;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+p, span {
+	font-family: FS Emeric-Book;
+	font-size: 15pt;
+	line-height: 20pt;
+	width: 95%;
+}
+
+span {
+       	display: block;
+}
+
+a {
+	cursor: pointer;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.content {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* HEADER */
+
+#header {
+	width: 100%;
+	background: #3bbf54;
+	height: 210px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+#header div {
+	width: 65%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+#header h1 {
+	padding-top: 25px;
+	color: #FFFFFF;
+	font-size: 50pt;
+	float: left;
+	text-transform: uppercase;
+}
+
+#header img {
+	float: right;
+}
+
+/* FOOTER */
+
+#footer {
+	width: 100%;
+	background: #3bbf54;
+}
+
+#footer div {
+	width: 70%;
+	margin: 0 auto;
+	padding: 80px 0;
+}
+
+#footer h1 {
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#footer a {
+	display: block;
+	margin: 0 auto;
+	background:url(../images/logo/SAMSUNG_Logo.png) no-repeat;
+	height: 230px;
+	width: 250px;
+	background-size: contain;
+	margin-top: 40px;
+}
+
+/* VIDEO */
+#video {
+	width: 100%;
+	position: relative;
+}
+
+#video-elem, #fallback {
+	width: 100%;
+	height: auto;
+}
+
+#mute, #play {
+	background-size: cover;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	position: absolute;
+	display: none;
+}
+
+#mute {
+	top: 1em;
+	right: 1em;
+	height: 4em;
+	width: 4em;
+}
+
+#play {
+	background-image:url('../images/play.png');
+	height: 7em;
+	width: 7em;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.muted {
+	background-image:url('../images/unmute.png');
+}
+
+.unmuted {
+	background-image:url('../images/mute.png');
+}
+
+/* DATA */
+#beginning, #solution, #implementation, #info {
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	padding: 50px 0px;
+}
+
+.container {
+	width: 75%;
+}
+
+.right {
+	margin-left: 96px;
+}
+
+.container > div {
+	float: left;
+	width: 45%;
+	min-width: 300px;
+	margin-top: 40px;
+}
+
+.container img {
+	height: auto;
+	width: 40%;
+	max-width: 660px;
+	overflow: hidden;
+	float: left;
+}
+
+/* BEGINNING */
+
+#beginning img {
+	width: 50%;
+}
+
+/* SOLUTION */
+#solution div {
+	width: 55%;
+}
+
+#solution img {
+	margin-top: 40px;
+	max-height: 620px;
+	max-width: 450px;
+}
+
+/* IMPLEMENTATION */
+
+#implementation div {
+	margin-top: 0;
+}
+
+#implementation img {
+	margin-top: 5px;
+}
+
+/* INFO */
+#info div div span:first-child {
+	font-family: FS Emeric-SemiBold;
+}
+
+/* IMAGES */
+#image1 {
+	width: 100%;
+	background:url('../images/app.jpg') 50% 0 no-repeat fixed;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+}
+
+#image2 {
+	background:url('../images/perspective.jpg') 50% 0 no-repeat fixed;
+	height: 600px;
+	padding: 200px 0 0 0;
+	background-size: cover;
+}
+
+#image3 {
+	background:url('../images/weather.jpg') 50% 0 no-repeat fixed;
+	height: 600px;
+	margin: 0 auto;
+	padding: 250px;
+	background-size: cover;
+}
+
+/* IE < 9 */
+.ie-error div {
+	width: 90%;
+	margin: auto;
+	font-family: arial;
+}
+
+.ie-error li {
+	font-size: 20pt;
+	list-style-type: none;
+}
+
+.ie-error ul {
+	padding: 0;
+	margin: 0;
+}
