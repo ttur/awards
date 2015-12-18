@@ -1,0 +1,355 @@
+/* FONTS */
+
+/* Regular */
+
+@font-face {
+	font-family: LatoLatin-Regular;
+	src:url('../fonts/LatoLatin-Regular.eot');
+	src:url('../fonts/LatoLatin-Regular.woff2');
+	src:url('../fonts/LatoLatin-Regular.woff');
+	src:url('../fonts/LatoLatin-Regular.ttf');
+}
+
+/* Bold */
+
+@font-face {
+	font-family: LatoLatin-Bold;
+	src:url('../fonts/LatoLatin-Bold.eot');
+	src:url('../fonts/LatoLatin-Bold.woff2');
+	src:url('../fonts/LatoLatin-Bold.woff');
+	src:url('../fonts/LatoLatin-Bold.ttf');
+}
+
+/* Heavy/Black */
+
+@font-face {
+	font-family: UnitedSansReg-Black;
+	src:url('../fonts/UnitedSansReg-Black.eot');
+	src:url('../fonts/UnitedSansReg-Black.woff');
+	src:url('../fonts/UnitedSansReg-Black.ttf');
+}
+
+/* GENERAL */
+
+html {
+	font-size: 125%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #000;
+	font-family: LatoLatin-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+	font-weight: normal;
+	line-height: 1.6rem;
+}
+
+h1, h2 {
+	margin: 0;
+	padding: 0;
+	font-family: UnitedSansReg-Black, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 4.8rem;
+	font-weight: bolder;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #000;
+}
+
+h1 {
+	color: #fff;
+}
+
+figure {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+dl, dt, dd {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+dl dt {
+	font-family: LatoLatin-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+dl dd {
+	margin-bottom: 16px;
+}
+
+strong {
+	font-family: LatoLatin-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+a, a:hover, a:visited {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #000;
+	opacity: 1;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
+a:hover {
+	opacity: 0.5;
+}
+
+a img {
+	opacity: 1;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
+
+footer, .container {
+	padding: 4.8rem 0;
+}
+
+/* HEADER */
+
+header {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #000;
+}
+
+#title {
+	position: absolute;
+	z-index: 1024;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#title div {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin: 0 auto;
+	-ms-transform: translateY(-50%); /* IE 9 */
+	-webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
+	transform: translateY(-50%);
+}
+
+#title img {
+	display: block;
+	width: 24%;
+	height: auto;
+	margin: 0 auto 4.8rem;
+	height: 4.8rem;
+}
+
+#title h1 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+/* HEADER VIDEO */
+
+#video {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	z-index: 512;
+}
+
+#video-elem, #fallback {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#mute, #play {
+	position: absolute;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+	background-repeat: no-repeat;
+}
+
+#mute {
+	top: 2em;
+	right: 2em;
+	z-index: 2048;
+	height: 30px;
+	width: 30px;
+	background-size: cover;
+}
+
+#play {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1536;
+	background-size: contain;
+	background-position: center;
+}
+
+.muted {
+	background-image:url('../images/unmute.png');
+}
+
+.unmuted {
+	background-image:url('../images/mute.png');
+}
+
+/* MAIN */
+
+main {
+	background-color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+	width: 100%;
+	background: #000;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+}
+
+footer div {
+	width: 80%;
+	margin: 0 auto;
+}
+
+footer a {
+	margin: 0 auto;
+	color: #fff;
+	text-decoration: none;
+	background-size: contain;
+}
+
+footer #logos, footer #logos a {
+	height: 6.4rem;
+	padding: 0;
+}
+
+footer #logos a {
+	position: relative;
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+footer #logos a img {
+	position: absolute;
+	display: inline;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%); /* IE 9 */
+	-webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+	transform: translate(-50%, -50%);
+	width: 75%;
+	max-height: 6.4rem;
+}
+
+footer p {
+	margin: 4.8rem 0 0;
+	font-size: 1.0rem;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.87);
+}
+
+/* DATA */
+
+#background {
+	text-align: left;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.container .left, .container .right {
+	width: 48%;
+}
+
+.container .left {
+	float: left;
+}
+
+.container .right {
+	float: right;
+}
+
+.container figure {
+	overflow: hidden;
+}
+
+.container figure img {
+	width: 100%;
+	height: auto;
+}
+
+#info div {
+	text-align: center;
+}
+
+/* BACKGROUND IMAGES */
+
+.bgimage {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 56.25%;
+	background-size: cover;
+	background-position: 50% 0;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#image1 {
+	background-image: url('../images/bg_events@2x.jpg');
+}
+
+#image2 {
+	background-image: url('../images/bg_profile@2x.jpg');
+}
+
+#image3 {
+	background-image: url('../images/bg_organiser@2x.jpg');
+}
+
+#image4 {
+	background-image: url('../images/bg_nationals@2x.jpg');
+}
+
+/* IE < 9 */
+.ie-error div {
+	width: 90%;
+	margin: auto;
+	font-family: Arial, sans-serif;
+}
+
+.ie-error li {
+	font-size: 20pt;
+	list-style-type: none;
+}
+
+.ie-error ul {
+	padding: 0;
+	margin: 0;
+}
