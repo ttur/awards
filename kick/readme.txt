@@ -1,1 +1,0 @@
-Put the Samsung Kick files in this folder
