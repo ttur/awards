@@ -113,9 +113,8 @@ a {
 #footer a {
 	display: block;
 	margin: 0 auto;
-	background:url(../images/logo/SAMSUNG_Logo.png) no-repeat;
-	height: 230px;
-	width: 250px;
+	height: 300px;
+	width: 100px;
 	background-size: contain;
 	margin-top: 40px;
 }
