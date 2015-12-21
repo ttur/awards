@@ -1,6 +1,6 @@
 @media screen and (max-width: 800px) {
 	html {
-		font-size: 93.75%;
+		font-size: 87.5%;
 	}
 
 	.bgimage {
@@ -10,23 +10,17 @@
 
 @media screen and (max-width: 600px) {
 	html {
-		font-size: 87.5%;
+		font-size: 81.25%;
 	}
 }
 
 @media screen and (max-width: 540px) {
 	html {
-		font-size: 81.25%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	html {
 		font-size: 75%;
 	}
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
 	html {
 		font-size: 68.75%;
 	}
