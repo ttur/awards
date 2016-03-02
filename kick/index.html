@@ -6,9 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />  
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 		<title>Samsung KICK Webby Awards Entry</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style2.css" />
-		<link rel="stylesheet" href="css/style3.css" />
+		<link rel="stylesheet" href="css/style-v2.css" />
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 		<!--[if (!IE)|(IE 9)]><!-->
@@ -33,9 +31,11 @@
 	<!--[if (!IE)|(IE 9)]><!-->
 		<body>
 		<div id="header">
-			<div id="header-div">
+			<div class="container cf">
 				<h1>SAMSUNG KICK</h1>
-				<img src="images/logo/SAMSUNG_Logo.png" />
+				<div class="logo cf">
+					<img src="images/logo/SAMSUNG_Logo.png" />
+				</div>
 			</div>
 		</div>
 
@@ -51,14 +51,16 @@
 		</div>
 		<!-- Slide 2 The beginning -->
 		<div id="beginning" class="container">
-			<div>
+			<div class="col-first">
 				<h1>Samsung KICK</h1>
 				<p>KICK brings science to the art of football debate, providing Samsung users with a new and compelling way to engage with their devices. </p>
 
-	<p>KICK uses cutting edge technology to empower fans with football knowledge, integrating vast amounts of data from a wide variety of sources, putting fans at the beating heart of the game. </p>
+			<p>KICK uses cutting edge technology to empower fans with football knowledge, integrating vast amounts of data from a wide variety of sources, putting fans at the beating heart of the game. </p>
 	<p> The resulting app integrates into the fans’ lives through a seamless multi-device flow across mobile, tablet and Samsung Smart TV’s with an emphasis on social sharing.  </p>
-			</div>	
-			<img src="images/tilt-2.png">
+			</div>
+			<div class="col-second">	
+				<img src="images/tilt-2.png">
+			</div>
 		</div>
 		<!-- Image 1 -->
 		<div id="image1">
@@ -66,11 +68,13 @@
 		</div>
 		 <!--Slide 3 The creative solution -->
 		<div id="solution" class="container">
-			<img src="images/workshop.png" />
-			<div class="right">
+			<div class="col-first">
+				<img src="images/workshop.png" />
+			</div>
+			<div class="col-second">
 				<h1>Creating KICK</h1>
 				
-				<p>To build an experience that football fans won't want to put down and which they would then in turn, advocate to their peer group, it was important to include them in the development process. </p>
+				<p>To build an experience that football fans won't want to put down and which theyf would then in turn, advocate to their peer group, it was important to include them in the development process. </p>
 				<p> The creative process included visiting pubs, blogs, stadiums, grounds and the online world of FIFA 15; to become immersed in the world of a dedicated football fan, and to gain valuable insights as to what fans really want from a live match companion app. 
 				</p>
 				<p>Extensive prototyping and validation with real users helped develop an intuitive UI with seamless cross-device sync and flow and social sharing.</p>
@@ -84,7 +88,7 @@
 		</div>
 		<!-- Slide 4 The implementation -->
 		<div id="implementation" class="container">
-			<div>
+			<div class="col-first">
 				<h1>Features</h1>
 				<p>Samsung has access to some of the most advanced and up-to-date football data in the world. Much of the experience was delivered to the user through beautifully designed, easy-to-read data visualisations. </p>
 				<p>The backend system integrated data from dozens of sources and functional programming allowed the app to react to live match events. It delivers real-time info before the match and detailed statistics during and after a match, including shots on goal, possession, passing and cards. </p>
@@ -92,7 +96,9 @@
 
 					
 		</div>
-			<img class="right" src="images/tilt-1 copy.png" />
+		<div class="col-second">
+			<img src="images/tilt-1 copy.png" />
+		</div>
 		</div>	
 		<!-- Image 3 -->
 		<div id="image3">
@@ -100,8 +106,10 @@
 		</div>
 		<!-- Slide 5 More information -->
 		<div id="info" class="container">
-			<img src="images/yay.png">
-			<div class="right">
+			<div class="col-first">
+				<img src="images/yay.png">
+			</div>
+			<div class="col-second">
 				<h1>Results</h1>
 				<div>
 					<p>Samsung KICK has an average score of 4.1 out of 5 on Google Play store, it’s been downloaded over 3 million times so far with over 500,000 active users 5-months after launch. </p> 
@@ -119,14 +127,16 @@
 
 		<!-- FOOTER LINK TO APP -->
 		<div id="footer">
-			<div>
-				<h1></h1>
+			<div class="container">
+				<h3>Download the App</h3>
+				<div class="footer-img">
 				<a target = "_blank" href="https://play.google.com/store/apps/details?id=com.samsung.kick&hl=en_GB"> 
-					<img src="images/appstore_button_google.png" width = "200px" style = "margin-left: -100px; margin-bottom: 50px" /> 
-
-					<img src="images/logo/Logo_Large.png" width = "200px" style = "margin-left: -100px" /> 
+					<img src="images/appstore_button_google.png"/> 
 				</a>
-			</div>
+				</div>
+				<div class="footer-img">
+					<img src="images/logo/Logo_Large.png"/> 
+				</div>
 		</div>
 	</body>
 	<!--<![endif]-->
