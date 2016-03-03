@@ -73,6 +73,8 @@ img {
 	max-width: 100%;
 }
 
+
+
 h3 {
 	color: #fff;
 	text-align: center;
@@ -119,7 +121,7 @@ h3 {
 @media screen and (min-width: 1000px) {
 
 	#beginning .col-first {
-		margin-top: 40px;
+		margin-top: 80px;
 	}
 
 	#solution .col-second {
@@ -127,7 +129,7 @@ h3 {
 	}
 
 	#implementation .col-first {
-		margin-top: 60px;
+		margin-top: 0px;
 	}
 
 	#info .col-second {
@@ -246,8 +248,8 @@ h3 {
 }
 
 #mute {
-	top: 1em;
-	right: 1em;
+	top: 3em;
+	right: 3em;
 	height: 4em;
 	width: 4em;
 }
@@ -278,32 +280,17 @@ h3 {
 	background-color: #FFFFFF;
 }
 
+@media screen and (max-width: 800px) {
+	.col-first img, .col-second img {
+		max-width: 75%;
+	}
+}
 
 
 .right {
 	margin-left: 96px;
 }
 
-// .container > div {
-// 	float: left;
-// 	width: 45%;
-// 	min-width: 300px;
-// 	margin-top: 40px;
-// }
-
-// .container img {
-// 	height: auto;
-// 	width: 40%;
-// 	max-width: 660px;
-// 	overflow: hidden;
-// 	float: left;
-// }
-
-/* BEGINNING */
-
-// #beginning img {
-// 	width: 50%;
-// }
 
 
 /* IMPLEMENTATION */
@@ -321,10 +308,11 @@ h3 {
 	font-family: FS Emeric-SemiBold;
 }
 
+
 /* IMAGES */
 #image1 {
 	width: 100%;
-	background:url('../images/app.jpg') 50% 0 no-repeat fixed;
+	background:url('../images/parallax1.jpg') 50% 0 no-repeat fixed;
 	height: 200px;
 	margin: 0;
 	padding: 250px;
