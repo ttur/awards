@@ -119,7 +119,7 @@ h3 {
 @media screen and (min-width: 1000px) {
 
 	#beginning .col-first {
-		margin-top: 80px;
+		margin-top: 40px;
 	}
 
 	#solution .col-second {
@@ -127,7 +127,7 @@ h3 {
 	}
 
 	#implementation .col-first {
-		margin-top: 0px;
+		margin-top: 60px;
 	}
 
 	#info .col-second {
@@ -324,7 +324,7 @@ h3 {
 /* IMAGES */
 #image1 {
 	width: 100%;
-	background:url('../images/parallax1.jpg') 50% 0 no-repeat fixed;
+	background:url('../images/app.jpg') 50% 0 no-repeat fixed;
 	height: 200px;
 	margin: 0;
 	padding: 250px;
