@@ -1,0 +1,93 @@
+@media screen and (max-width: 1920px) {
+	html {
+		font-size: 118.25%;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	html {
+		font-size: 112.5%;
+	}
+
+	h1, h2 {
+		font-size: 3.2rem;
+	}
+
+	#title img {
+		margin-bottom: 3.2rem;
+		height: 3.2rem;
+	}
+}
+
+@media screen and (max-width: 1368px) {
+	html {
+		font-size: 106.25%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	html {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 93.75%;
+	}
+
+	header #title h1, .container, footer div {
+		width: 90%;
+	}
+
+	footer, .container {
+		padding: 3.2rem 0;
+	}
+
+	footer p {
+		margin-top: 3.2rem;
+	}
+
+	.container {
+		height: auto !important;
+	}
+
+	.container .left, .container .right{
+		float: none !important;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.container figure {
+		width: 75% !important;
+		margin-bottom: 3.2rem !important;
+	}
+
+	#info .left {
+		margin-bottom: 3.2rem;
+	}
+
+	.bgimage {
+		padding-top: 75%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+	}
+
+	#image1 {
+		background-image: url('../images/bg_events.jpg');
+	}
+
+	#image2 {
+		background-image: url('../images/bg_profile.jpg');
+	}
+
+	#image3 {
+		background-image: url('../images/bg_organiser.jpg');
+	}
+
+	#image4 {
+		background-image: url('../images/bg_nationals.jpg');
+	}
+}
