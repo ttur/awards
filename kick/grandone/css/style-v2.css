@@ -1,0 +1,376 @@
+/* FONT */
+
+@font-face {
+	font-family: FS Emeric-Book;
+	src:url('../../fonts/FS-Emeric-Book.otf');
+
+}
+
+@font-face {
+	font-family: FS Emeric-SemiBold;
+	src:url('../../fonts/FS-Emeric-SemiBold.otf');
+
+	
+}
+
+@font-face {
+	font-family: FS Emeric-Bold;
+	src:url('../../fonts/FS-Emeric-Bold.otf');
+	
+}
+
+/* GENERAL */
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	line-height: 1.4;
+	font-family: FS Emeric-Book;
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 56px;
+	font-family: FS Emeric-Bold;
+	color: #3bbf54;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+
+@media screen and (max-width: 1000px) {
+	body {
+		font-size: 18px;
+	}
+
+	h1 {
+		font-size: 34px;
+	}
+}
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 16px;
+	}
+
+	h1 {
+		font-size: 28px;
+	}
+}
+
+
+span {
+  display: block;
+}
+
+a {
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+h3 {
+	color: #fff;
+	text-align: center;
+	font-size: 32px;
+	font-family: FS Emeric-Bold;
+}
+.center {
+	margin: 0 auto;
+}
+
+.content {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.clear {
+	clear: both;
+}
+
+.container {
+	width: 1200px;
+	max-width: 90%;
+	padding: 100px 0;
+	margin: 0 auto;
+}
+
+.container img {
+	margin: auto;
+	display: block;
+}
+
+.col-first {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+
+.col-second {
+	float: left;
+	width: 48%;
+	margin-right: ;
+}
+
+@media screen and (min-width: 1000px) {
+
+	#beginning .col-first {
+		margin-top: 80px;
+	}
+
+	#solution .col-second {
+		margin-top: 40px;
+	}
+
+	#implementation .col-first {
+		margin-top: 0px;
+	}
+
+	#info .col-second {
+		margin-top: 50px;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	#beginning .col-first {
+		margin-bottom: 20px;
+	}
+
+	#solution .col-second {
+		margin-top: 40px;
+	}
+
+
+	#info .col-second {
+		margin-top: 50px;
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.col-first, .col-second {
+		width: 100%;
+	}
+}
+
+/* HEADER */
+
+#header {
+	width: 100%;
+	background: #3bbf54;
+	height: 200px;
+}
+
+#header .container {
+	padding: 60px 0 0 0;
+}
+
+
+#header h1 {
+	color: #FFFFFF;
+	font-size: 52px;
+	float: left;
+	text-transform: uppercase;
+}
+
+.logo {
+	width: 75px;
+	float: right;
+}
+
+@media screen and (max-width: 600px) {
+	#header h1 {
+		font-size: 32px;
+	}
+
+	.logo {
+		width: 40px;
+		float: right;
+	}
+
+	#header {
+		height: 155px;
+	}
+}
+
+
+
+
+/* FOOTER */
+
+#footer {
+	width: 100%;
+	background: #3bbf54;
+}
+
+.footer-img {
+	margin: 0 auto;
+	max-width: 200px;
+}
+
+.footer-img + .footer-img {
+	margin-top: 50px;
+}
+
+#footer h1 {
+	color: #FFFFFF;
+	text-align: center;
+}
+
+
+
+/* VIDEO */
+#video {
+	width: 100%;
+	position: relative;
+}
+
+#video-elem, #fallback {
+	width: 100%;
+	height: auto;
+}
+
+#mute, #play {
+	background-size: cover;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	position: absolute;
+	display: none;
+}
+
+#mute {
+	top: 3em;
+	right: 3em;
+	height: 4em;
+	width: 4em;
+}
+
+#play {
+	background-image:url('../../images/play.png');
+	height: 7em;
+	width: 7em;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.muted {
+	background-image:url('../../images/unmute.png');
+}
+
+.unmuted {
+	background-image:url('../../images/mute.png');
+}
+
+/* DATA */
+#beginning, #solution, #implementation, #info {
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 800px) {
+	.col-first img, .col-second img {
+		max-width: 75%;
+	}
+}
+
+
+.right {
+	margin-left: 96px;
+}
+
+
+
+/* IMPLEMENTATION */
+
+#implementation div {
+	margin-top: 0;
+}
+
+#implementation img {
+	margin-top: 5px;
+}
+
+/* INFO */
+#info div div span:first-child {
+	font-family: FS Emeric-SemiBold;
+}
+
+
+/* IMAGES */
+#image1 {
+	background:url('../../dandad/images/parallax1.jpg') 50% 0 no-repeat fixed;
+	height: 200px;
+	margin: 0;
+	padding: 250px;
+	background-size: cover;
+}
+
+#image2 {
+	background:url('../../dandad/images/perspective.jpg') 50% 0 no-repeat fixed;
+	height: 200px;
+	padding: 250px;
+	background-size: cover;
+}
+
+#image3 {
+	background:url('../../dandad/images/weather.jpg') 50% 0 no-repeat fixed;
+	height: 200px;
+	margin: 0 auto;
+	padding: 250px;
+	background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+	#image1, #image2, #image3 {
+		height: 400px;
+		padding: 0px;
+	}
+}
+
+/* IE < 9 */
+.ie-error div {
+	width: 90%;
+	margin: auto;
+	font-family: arial;
+}
+
+.ie-error li {
+	font-size: 20pt;
+	list-style-type: none;
+}
+
+.ie-error ul {
+	padding: 0;
+	margin: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
