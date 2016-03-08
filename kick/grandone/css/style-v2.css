@@ -340,6 +340,47 @@ h3 {
 	}
 }
 
+
+/* LOGOS */
+
+.logos {
+	margin-top: 30px;
+}
+
+.logos h4 {
+	margin-bottom: 5px;
+}
+
+#footer h3 {
+	margin-bottom: 10px;
+}
+
+.logo-col {
+	width: 33.33333%;
+	float:left;
+	text-align: center;
+	color: white;
+} 
+
+@media screen and (max-width: 600px) {
+	.logo-col {
+		width: 90%;
+		margin: 0 5%;
+		padding-top: 30px;
+	}
+}
+
+#footer .container {
+	padding: 40px 0 70px 0;
+}
+
+
+
+.logo-col img {
+	width: 200px;
+	max-width: 90%;
+}
+
 /* IE < 9 */
 .ie-error div {
 	width: 90%;
