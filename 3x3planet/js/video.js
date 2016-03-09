@@ -43,8 +43,8 @@ $(document).ready(function() {
 
 	function supports_video() {
 		var vid = document.createElement('video');
-		return !!(vid.canPlayType('video/webm') ||
-			vid.canPlayType('video/mp4') ||
+		return !!(vid.canPlayType('video/mp4') ||
+			vid.canPlayType('video/webm') ||
 			vid.canPlayType('video/ogg'));
 	}
 
