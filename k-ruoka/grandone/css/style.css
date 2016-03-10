@@ -344,8 +344,11 @@ footer #credits img.smaller{
 }
 .quote .title{
 	color:#888;
-	white-space: nowrap;
 	margin-bottom: 0.7rem;
+}
+.quote .name{
+	display: block;
+	float:left;
 }
 .quote .text{
 	font-style: italic;
