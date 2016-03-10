@@ -4,9 +4,16 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />  
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-		<neta name="robots" content="noindex, nofollow" />
+		<meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#EE2544">
+		<link rel="icon" type="image/png" href="favicon.png" />
 		<title>K-ruoka mobiilisovellukset</title>
+		<script src="https://use.typekit.net/stk7gsa.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style2.css" />
+		<link rel="stylesheet" href="css/style3.css" />
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 		<!--[if (!IE)|(IE 9)]><!-->
 		<script type="text/javascript" src="js/video.js"></script>
@@ -15,26 +22,184 @@
 	<!--[if lt IE 9]>
 	<body class="ie-error">
 		<div>
-			<h1>The browser that you're using is not supported</h1>
-			<p>This page needs a modern web browser. Please, update your browser or try another one like Mozilla Firefox or Google Chrome.</p>
-			<p>You can download Firefox and Chrome for free from these links:</p>
+			<h1>K-ruoka mobiilisovellukset</h1>
+			<p>Tämä sivu vaatii modernin selaimen. Olkaa hyvä ja päivittäkää selaimenne uusimpaan versioon tai kokeilkaa toista selainta, kuten Mozilla Firefox tai Google Chrome.</p>
+			<p>Mainitut selaimet voit ladata ilmaiseksi:</p>
 			<p><ul class="links">
-				<li><a href="http://www.mozilla.org/en/firefox/new/">Firefox</a></li>
-				<li><a href="http://www.google.com/intl/en/chrome/browser/">Chrome</a></li>
+				<li><a href="http://www.mozilla.org/fi/firefox/new/">Firefox</a></li>
+				<li><a href="http://www.google.com/intl/fi/chrome/browser/">Chrome</a></li>
 			</ul></p>
 		</div>
 	</body>
 	<![endif]-->
 	<!--[if (!IE)|(IE 9)]><!-->
 	<body>
-		<header>
-			<section id="title">
-				<div>
-					<h1>K-ruoka mobiilisovellukset</h1>
-				</div>
+			<header>
+
+				<section id="video">
+				<video id="video-elem" poster="images/k-ruoka-intro.png" muted="true" loop>
+					<source src="videos/KESKO_hero.mp4" type="video/mp4" />
+					<source src="videos/KESKO_hero.webm" type="video/webm" />
+					<source src="videos/KESKO_hero.ogg" type="video/ogg" />
+				</video> 
+
+				<img src="images/k-ruoka-intro.png" id="fallback" width="100%" style="display: none;" />
+				<button id="mute" class="muted" ></button>
+				<button id="play"></button>
 			</section>
 		</header>
+		<main>
+			<!-- Slide 1 Background -->
+			<section id="background" class="container">
+				<figure class="right">
+					<img src="images/paras_kauppakaveri.jpg" srcset="images/paras_kauppakaveri.jpg 1x, images/paras_kauppakaveri@2x.jpg 2x" alt="K-ruoka - paras kauppakaveri" />
+				</figure>
+				<div class="left">
+					<h2>K-ruoka - paras kauppakaveri</h2>
+					<p>
+					K-ruoka -sovellus on tarkoitettu kaikille älypuhelimen käyttäjille jokapäiväiseen käyttöön - parhaaksi kauppakaveriksi. Sovellus tuo ideoita ja inspiraatiota ruoanlaittoon ja helpottaa arjen ostosten tekoa. Kauppiaille sovellus tarjoaa uuden keinon asiakkaiden tavoittamiseen.
+					</p>
+					<p>
+					Älykäs sovellus ehdottaa resepti- ja tuotesuosituksia käyttäjän omaan ostohistoriaan pohjautuen. K-Plussa-kirjautuminen mahdollistaa jokaiselle käyttäjälle yksilöllisesti personoidun sisällön.
+					</p>
+					<p>
+					Sovellusta voi käyttää yksin tai yhdessä perheen kanssa, esim. yhteistä ostoslistaa voi käyttää reaaliaikaisesti eri mobiililaitteilla.
+					</p>
+				</div>
+			</section>
+			<!-- Image 1 -->
+			<section id="image1" class="bgimage">
+				<!-- background is defined in css -->
+			</section>
+			<!-- Slide 2 The Digipalvelut -->
+			<section id="digipalvelut" class="container">
+				<figure class="left">
+					<img src="images/digipalvelut@2x.jpg" alt="Digipalvelut" />
+				</figure>
+				<div class="right">
+					<h2>Parhaat kaupanalan digipalvelut</h2>
+					<p>
+					Digitalisaatiossa keskeistä on vallan siirtyminen kuluttajille. Digitaalisuuden hyödyntäminen kauppa-asioinnissa ei rajaudu pelkästään fyysiseen myymälään. Kuluttajat etsivät tietoja ja vertailevat eri vaihtoehtoja myös verkossa ja sosiaalisessa mediassa.
+					</p>
+					<p>
+					Keskon strategisena tavoitteena on tarjota asiakkailleen vertailuryhmän parhaita digitaalisia palveluita vuoden 2017 loppuun mennessä. Erityisesti asioinnin helppous ja henkilökohtaisuus korostuvat digitaalisessa toimintaympäristössä.
+					</p>
+					<p>
+					K-ruoka -sovelluksen helppokäyttöisyys, monipuolisuus ja käyttäjille tarjottu henkilökohtainen sisältö tukevat Keskon tavoitteita.
+					</p>
+				</div>
+			</section>
 
-	</body>
+
+
+			<section class="full-container--grey">
+				<section id="quotes" class="container clearfix">
+
+				<div class="col">
+					<div class="quote">
+						<div class="title">
+							<span class="stars">★★★★★</span> Jussi-Pekka
+						</div>
+						<div class="text">
+							“Loistava, varsinkin kun plussa-kortin linkittää. Tämän jälkeen ostoslistan tekeminen todella nopeaa ja helppoa, koska tietää mitä yleensä ostan. Pirkan reseptit parhaita.”
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="quote">
+						<div class="title">
+							<span class="stars">★★★★★</span> Miksu5
+						</div>
+						<div class="text">
+							“Henkilökohtaiset reseptisuositukset ja tarjousten sorttaus hyviä parannuksia jo ennestään mainioon arjen apuriin.”
+						</div>
+					</div>
+				</div>				
+				<div class="col">
+					<div class="quote">
+						<div class="title">
+							<span class="stars">★★★★★</span> Antti Kosonen
+						</div>
+						<div class="text">
+							“Aijai kun tuo perheen kesken jaettu ostoslista on viimeisen päälle.”
+						</div>
+					</div>
+				</div>
+
+				</section>
+			</section>
+
+			<!-- Image 2 -->
+			<section id="image2" class="bgimage">
+				<!-- background is defined in css -->
+			</section>
+			<!-- Slide 3 The Design -->
+			<section id="design" class="container">
+				<figure class="right">
+					<img src="images/design@2x.jpg" alt="Design" />
+				</figure>
+				<div class="left">
+					<h2>Design</h2>
+					<p>
+					Loppukäyttäjien toiveet ja tarpeet sekä Keskon liiketoiminnan tavoitteet muodostivat pohjan designille. Konseptoinnissa osallistettiin työpajoissa, verkkokyselyissä, haastatteluissa ja pilottitestauksessa n. 2000 käyttäjää: kuluttaja-asiakkaita, kauppiaita sekä Keskolaisia.
+					</p>
+					<p>
+					Designin kantava teema oli alustakohtaisten suunnitteluohjenuorien soveltaminen sekä vakiintuneiden suunnitteluperiaatteiden hyödyntäminen. K-ruoka Android, iOS ja Windows Phone natiivisovellusten tavoitteena on näyttää ja tuntua yhdenmukaiselta, mutta samalla luontevalta eri alustoihin tottuneille käyttäjille - niin sovellusten tehokuluttajille kuin vähemmän käyttäville.
+					</p>
+
+				</div>
+			</section>
+			<!-- Image 3 -->
+			<section id="image3" class="bgimage">
+				<!-- background is defined in css -->
+			</section>
+			<!-- Slide 4 The Impact -->
+			<section id="impact" class="container">
+				<figure class="left">
+					<img src="images/vaikutus@2x.png" alt="Sovelluksen vaikutus" />
+				</figure>
+				<div class="right">
+					<h2>Vaikutus</h2>
+					<p>
+					K-ruoka kauppakaveri tuntee käyttäjänsä, auttaa kaupassa asioinnissa, palkitsee henkilökohtaisilla eduilla, sekä inspiroi ruoanlaitossa.
+					</p>
+					<p>
+					Sovelluksella on 135000 käyttäjää (02/2016) ja määrä kasvaa tasaisesti. Sovelluskaupoissa K-ruoka on pysynyt maksuttomien sovellusten top-listoilla julkaisusta lähtien ja löytyy esim. Google Play Storen Shopping-kategorian ykkösenä Suomessa.
+					</p>
+				</div>
+			</section>	
+
+		
+		</main>
+		<footer>
+
+			<div id="credits" class="clearfix">
+				<div>
+					Asiakas
+					<img src="../images/kesko-logo.svg" class="smaller"/>
+				</div>
+				<div>
+					Sovelluksen design &amp; tuotanto
+					<img src="../images/futurice-logo.svg" />
+				</div>
+				<div>
+					Markkinointivideo
+					<img src="../images/futurice-logo.svg" />
+				</div>
+			</div>
+
+			<div id="logos" class="clearfix">
+				<span>Lataa sovellus</span>
+				<p>
+					<a href="https://itunes.apple.com/fi/app/k-ruoka/id1012903895?mt=8" title="K-Ruoka iOS"><img src="images/AppStore_badge.svg" alt="Lataa App Storesta" width="200"  /></a>
+					<a href="http://play.google.com/store/apps/details?id=fi.ruokakesko.k_ruoka" title="K-Ruoka Android"><img src="images/GooglePlay_badge.svg" alt="Lataa Google Playsta" width="200" /></a>
+					<a href="https://www.microsoft.com/fi-fi/store/apps/k-ruoka/9nblggh6hzfj" title="K-Ruoka Windows Phone"><img src="images/Windows_badge.svg" alt="Lataa Windows Storesta" width="200" /></a>
+
+				</p>
+			</div>
+
+
+		</footer>
+		</body>
 	<!--<![endif]-->
 </html>
