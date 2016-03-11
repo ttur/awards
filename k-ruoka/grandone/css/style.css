@@ -15,7 +15,7 @@ body {
 	width: 100%;
 	background-color: #000;
 	font-family: 'proxima nova', -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: lighter;
 	line-height: 1.6rem;
 	color: #000;
@@ -35,11 +35,11 @@ h1, h2 {
 h1 {
 	color: #fff;
 }
-/*
+
 h2{
-	font-size:3.5rem;
+	font-size:2.8rem;
 }
-*/
+
 
 figure {
 	display: block;
@@ -332,7 +332,7 @@ footer #credits img.smaller{
 	border-radius: 40px;
 	padding: 40px;
 	display: block;
-	font-size:80%;
+	font-size:90%;
 }
 
 .quote .stars{
@@ -351,6 +351,7 @@ footer #credits img.smaller{
 	float:left;
 }
 .quote .text{
+	line-height: 1.2rem;
 	font-style: italic;
 }
 
