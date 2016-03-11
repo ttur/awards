@@ -97,15 +97,15 @@
 
 	#image1 {
 		/*padding-top: 70%;*/
-		background-image: url('../images/bg_arvostelut.jpg');
+		background-image: url('../images/bg_arvostelut@2x.jpg');
 	}
 
 	#image2 {
-		background-image: url('../images/bg_kaupassa.jpg');
+		background-image: url('../images/bg_kaupassa@2x.jpg');
 		background-position: 33% 50%;
 	}
 
 	#image3 {
-		background-image: url('../images/bg_kotona.jpg');
+		background-image: url('../images/bg_kotona@2x.jpg');
 	}
 }
