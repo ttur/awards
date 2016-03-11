@@ -16,7 +16,7 @@ body {
 	background-color: #000;
 	font-family: 'proxima nova', -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1rem;
-	font-weight: lighter;
+	font-weight: normal;
 	line-height: 1.6rem;
 	color: #000;
 }
@@ -26,7 +26,7 @@ h1, h2 {
 	padding: 0;
 	font-family: 'proxima nova', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 3.5rem;
-	font-weight: '900';
+	font-weight: bold;
 	line-height: 1;
 	text-transform: none;
 	color: #D02545;
