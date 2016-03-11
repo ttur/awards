@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 1024px) {
 	html {
-		font-size: 93.75%;
+		font-size: 100%;
 	}
 
 	header #title h1, .container, footer div {
