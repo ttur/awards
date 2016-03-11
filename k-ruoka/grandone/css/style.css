@@ -212,7 +212,15 @@ footer {
 	background: #E9E9E9;
 	margin: 0 auto;
 	text-align: center;
-	color: #fff;
+}
+
+footer .category-title{
+	text-align: center;
+	padding-left:2rem;
+	padding-right:2rem;
+	margin-bottom: 4rem;
+	color: #808080;
+	font-size: 2rem;
 }
 
 footer div {
