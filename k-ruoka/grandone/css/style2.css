@@ -74,6 +74,10 @@
 		margin: 0 auto;
 	}
 
+	.full-container--grey .container{
+		max-width: none;
+	}
+
 	#quotes > .col{
 		margin: 1rem auto;
 	}
