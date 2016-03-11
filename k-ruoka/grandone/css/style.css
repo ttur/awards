@@ -235,6 +235,7 @@ footer a {
 	background-size: contain;
 }
 footer #logos{
+	max-width: 1100px;
 	margin: 4rem auto;
 }
 footer #logos, footer #logos a {
