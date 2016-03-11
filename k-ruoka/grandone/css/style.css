@@ -92,6 +92,10 @@ footer, .container {
 	padding: 4.8rem 0;
 }
 
+footer {
+	padding-bottom: 2.4rem;
+}
+
 /* HEADER */
 
 header {
@@ -160,8 +164,6 @@ header {
 	background-color: transparent;
 	cursor: pointer;
 	background-repeat: no-repeat;
-	filter:brightness(80%);
-	-webkit-filter:brightness(80%);
 }
 
 #mute {
@@ -345,7 +347,7 @@ footer #credits img.smaller{
 
 .quote .stars{
 	color:#D02545;
-	letter-spacing: 0.3rem;
+	letter-spacing: 0.15rem;
 	font-size:1.5rem;
 	margin-right: 1rem;
 	float:left;
@@ -355,8 +357,7 @@ footer #credits img.smaller{
 	margin-bottom: 0.7rem;
 }
 .quote .name{
-	display: block;
-	float:left;
+	clear: left;
 }
 .quote .text{
 	line-height: 1.2rem;
