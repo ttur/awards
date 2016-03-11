@@ -6,6 +6,10 @@
 	.bgimage {
 		padding-top: 133%;
 	}
+
+	footer #credits > div{
+		font-size: 110%;
+	}
 }
 
 
