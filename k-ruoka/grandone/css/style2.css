@@ -82,6 +82,10 @@
 		margin: 1rem auto;
 	}
 
+	footer .category-title {
+		margin-bottom: 0;
+	}
+
 	footer #credits > div{
 		margin-top:3.5rem;
 	}
@@ -126,5 +130,17 @@
 
 	#image3 {
 		background-image: url('../images/bg_kotona@2x.jpg');
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	footer .participants {
+		font-size: 100%;
+	}
+
+	footer #credits img {
+		margin: 20px auto;
 	}
 }

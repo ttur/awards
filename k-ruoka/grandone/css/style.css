@@ -213,14 +213,12 @@ footer {
 	width: 100%;
 	background: #E9E9E9;
 	margin: 0 auto;
-	text-align: center;
 }
 
 footer .category-title{
-	text-align: center;
-	padding-left:2rem;
-	padding-right:2rem;
-	margin-bottom: 4rem;
+	width: 80%;
+	max-width: 1100px;
+	margin: 0 auto 4rem auto;
 	color: #808080;
 	font-size: 2rem;
 }
@@ -237,7 +235,6 @@ footer a {
 	background-size: contain;
 }
 footer #logos{
-	max-width: 800px;
 	margin: 4rem auto;
 }
 footer #logos, footer #logos a {
@@ -274,13 +271,30 @@ footer #credits > div{
 footer #credits img {
 	max-width: 200px;
 	display: block;
-	margin: 20px auto 0;
+	margin: 20px 0;
 }
 footer #credits img.smaller{
 	width:180px;
 	margin-top: 25px;
 }
 
+footer .participants {
+	padding: 0;
+	list-style-type: none;
+	color: #282828;
+	font-size: 75%;
+	padding-right: 2rem;
+}
+
+footer .participants li {
+	line-height: 1rem;
+	margin-bottom:  0.5rem;
+}
+
+footer .participants span {
+	font-style: italic;
+	color: #808080;
+}
 
 /* DATA */
 
