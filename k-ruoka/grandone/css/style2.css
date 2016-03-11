@@ -31,6 +31,21 @@
 	}
 }
 
+@media screen and (min-width: 1025px) {
+	.container .left--overlap{
+		overflow: visible;
+	}
+	.img--overlap-right{
+		position: relative;
+		right: -15%;
+		width: 130%
+	}
+	.right--overlapped{
+		position: relative;
+		z-index: 2;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	html {
 		font-size: 93.75%;
