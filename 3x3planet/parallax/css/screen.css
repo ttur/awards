@@ -1,0 +1,777 @@
+/* ================================================================
+FONTS
+================================================================ */
+
+@import "fonts.css" screen, projection;
+
+/* ================================================================
+GENERAL STYLES
+================================================================ */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 125%;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #fff;
+}
+
+body {
+	font-family: Body-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.4;
+	font-weight: 200;
+	color: #212121;
+	background-color: #fff;
+}
+
+article, header, section, footer, div {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	font-family: Title, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 3.2rem;
+	line-height: 1;
+	font-weight: bolder;
+}
+
+dl, dt, dd, ul, ul li, ol, ol li {
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+dl dt {
+	font-family: Body-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+dl dd, ul, ol {
+	margin-bottom: 1rem;
+}
+
+figure, video{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+strong {
+	font-family: Body-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+/* Links */
+
+a, a:hover, a:active, a:visited {
+	cursor: pointer;
+	text-decoration: underline;
+	color: rgba(0,0,0,1.0);
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
+a:hover {
+	color: rgba(0,0,0,0.5);
+}
+
+a img {
+	opacity: 1;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
+a:hover img {
+	opacity: 0.5;
+}
+
+/* ================================================================
+COMMON STYLES
+================================================================ */
+
+.slides {
+	width: 100%;
+}
+
+.slide {
+	position: relative;
+	width: 100%;
+	height: 96vh;
+	min-height: 768px;
+	box-shadow: 0 0 57px rgba(0,0,0,0.30), 0 0 27px rgba(0,0,0,0.22);
+}
+
+.slide.solid {
+	background-color: #fff;
+	opacity: 1 !important;
+}
+
+.slide__content{
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 3.2rem;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+  align-items: center;
+}
+
+.slide.solid .slide__content {
+	background-color: #fff;
+}
+
+.slide__media img, .slide__media video{
+	width: 100%;
+}
+
+.column__left, .column__right {
+	width: 50%;
+	height: auto;
+	min-height: 400px;
+  -webkit-box-flex: 1 1 auto;
+  -moz-box-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.column__left {
+	float: left;
+	padding-right: 1.6rem;
+	-webkit-box-ordinal-group: 1;  
+	-moz-box-ordinal-group: 1;     
+	-ms-flex-order: 1;     
+	order: 1;
+}
+
+.column__right {
+	float: right;
+	padding-left: 1.6rem;
+	-webkit-box-ordinal-group: 2;  
+	-moz-box-ordinal-group: 2;     
+	-ms-flex-order: 2;     
+	order: 2;
+}
+
+.slide__content:after {
+	display: block;
+	visibility: hidden;
+	content: "";
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	clear: both;
+}
+
+.slide__background {
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+
+/* ================================================================
+SECTIONS AND BACKGROUNDS
+Z-indexes are needed for elevation definition
+================================================================ */
+
+#section1 {
+	z-index: 32;
+}
+#section1 .slide__background {
+	background: black;
+}
+
+#section2 {
+	z-index: 64;
+}
+
+#background1 {
+	z-index: 33;
+}
+#background1 .slide__background {
+	background-image: url('../image-assets/background1@2x.jpg');
+}
+
+#section3 {
+	z-index: 63;
+}
+
+#background2 {
+	z-index: 34;
+}
+#background2 .slide__background {
+	background-image: url('../image-assets/background2@2x.jpg');
+}
+
+#section4 {
+	z-index: 62;
+}
+
+#background3 {
+	z-index: 35;
+}
+#background3 .slide__background {
+	background-image: url('../image-assets/background3@2x.jpg');
+}
+
+#section5 {
+	z-index: 61;
+}
+
+#background4 {
+	z-index: 36;
+}
+#background4 .slide__background {
+	background-image: url('../image-assets/background4@2x.jpg');
+}
+
+#section6 {
+	z-index: 60;
+}
+
+#section7 {
+	z-index: 59;
+}
+
+/* ================================================================
+HEADER
+================================================================ */
+
+header {
+	text-align: center;
+	color: #fff;
+}
+
+header img {
+	display: block;
+	width: 24%;
+	height: auto;
+	margin: 0 auto 4.8rem;
+	height: 4.8rem;
+}
+
+header h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 3.2rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+header h2{
+	margin: 0;
+	padding: 0;
+	font-size: 3.2rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+/* HEADER VIDEO */
+
+#intro {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+}
+
+#intro_video, #intro_fallback {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	object-fit: cover;
+	object-position: 50% 50%;
+	overflow: hidden;
+}
+
+#intro #mute, #intro #play {
+	position: absolute;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#intro #mute {
+	top: 2em;
+	right: 2em;
+	height: 30px;
+	width: 30px;
+	background-size: cover;
+	z-index: 48;
+}
+
+#intro #play {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 32;
+	background-size: contain;
+	background-position: center;
+}
+
+#intro .muted {
+	background-image:url('../images/icon_unmute.png');
+}
+
+#intro .unmuted {
+	background-image:url('../images/icon_mute.png');
+}
+
+/* ================================================================
+MAIN CONTENT
+================================================================ */
+
+section h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #000;
+	text-transform: uppercase;
+}
+
+/* ================================================================
+FOOTER
+================================================================ */
+
+footer {
+	text-align: center;
+	color: #fff;
+	background-color: #212121;
+}
+
+footer #copy {
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	right: 0;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.87);
+}
+
+/* ================================================================
+CSS PARALLAX EFFECT
+http://keithclark.co.uk/articles/pure-css-parallax-websites/
+================================================================ */
+
+@media screen and (min-width: 1024px) {
+	@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+		html, body {
+			height: 100%;
+			overflow: hidden;
+		}
+
+		body {
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0); 
+		}
+
+		.slides {
+			position: absolute;
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			-webkit-perspective: 300px;
+			perspective: 300px;
+			scroll-behavior: smooth;
+		}
+
+		.slide {
+			position: relative;
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+		}
+
+		footer.slide {
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+
+		.slide__content {
+
+		}
+
+		.vertical__center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.slide__background, .slide__base, .slide__foreground {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.slide__media.column__left {
+			transform-origin: 100% 50%;
+		}
+
+		.slide__media.column__right {
+			transform-origin: 0% 50%;
+		}
+
+		.slide__background {
+			background-attachment: scroll;
+			background-position: 50% 50%;
+			background-size: cover;
+			-webkit-transform: translateZ(-256px) scale(2);
+			transform: translateZ(-256px) scale(2);
+			z-index: 1;
+		}
+
+		.slide__base, .slide__text {
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+			z-index: 3;
+		}
+
+		.slide__foreground, .slide__media {
+			-webkit-transform: translateZ(96px) scale(.68);
+			transform: translateZ(96px) scale(.68);
+			z-index: 4;
+		}
+	}
+}
+
+/* ================================================================
+CSS PARALLAX EFFECT
+Debugger styles - used to show the parallax effect
+================================================================ */
+
+.debug {
+	position: fixed;
+	top: 0;
+	left: .5em;
+	z-index: 999;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	padding: .5em;
+	border-radius: 0 0 5px 5px;
+}
+.debug-on .slide {
+	-webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
+	transform: translate3d(700px, 0, -800px) rotateY(30deg);
+}
+.debug-on .slide__layer {
+	box-shadow: 0 0 0 2px #000;
+	opacity: 0.9;
+}
+.parallax__group {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+/* ================================================================
+NAVIGATION
+https://codyhouse.co/gem/vertical-fixed-navigation/
+================================================================ */
+
+.cd-img-replace {
+	/* replace text with a background-image */
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+#cd-vertical-nav {
+	line-height: 1;
+}
+
+#cd-vertical-nav ul, #cd-vertical-nav ul li {
+	margin: 0;
+	padding: 0;
+}
+
+#cd-vertical-nav a{
+	text-decoration: none;
+}
+
+/* No touch devices */
+
+.cd-nav-trigger {
+	display: none;
+}
+
+.no-touch #cd-vertical-nav {
+	position: fixed;
+	right: 1.5rem;
+	top: 50%;
+	bottom: auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 1024;
+}
+
+.no-touch #cd-vertical-nav li {
+	text-align: right;
+}
+
+.no-touch #cd-vertical-nav a {
+	display: inline-block;
+	/* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.no-touch #cd-vertical-nav a:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.no-touch #cd-vertical-nav a span {
+	float: right;
+	display: inline-block;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	-ms-transform: scale(0.6);
+	-o-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.no-touch #cd-vertical-nav a:hover span {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.no-touch #cd-vertical-nav a:hover .cd-label {
+	opacity: 1;
+}
+
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+	background-color: rgba(0,0,0,1);
+}
+
+.no-touch #cd-vertical-nav .cd-dot {
+	position: relative;
+	/* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+	top: 10px;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+	-moz-transition: -moz-transform 0.2s, background-color 0.5s;
+	transition: transform 0.2s, background-color 0.5s;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.no-touch #cd-vertical-nav .cd-label {
+	position: relative;
+	margin-right: 10px;
+	padding: .4em 1em;
+	color: white;
+	font-size: 14px;
+	font-size: 0.875rem;
+	border-radius: 1em;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	opacity: 0;
+	-webkit-transform-origin: 100% 50%;
+	-moz-transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	-o-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+/* Touch devices */
+
+.touch .cd-nav-trigger {
+	display: block;
+	z-index: 2;
+	position: fixed;
+	bottom: 44px;
+	right: 44px;
+	height: 44px;
+	width: 44px;
+	border-radius: 0.25em;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.touch .cd-nav-trigger span {
+	position: absolute;
+	height: 4px;
+	width: 4px;
+	background-color: #3e3947;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.touch .cd-nav-trigger span::before, .touch .cd-nav-trigger span::after {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	background-color: inherit;
+	border-radius: inherit;
+}
+
+.touch .cd-nav-trigger span::before {
+	top: -9px;
+}
+
+.touch .cd-nav-trigger span::after {
+	bottom: -9px;
+}
+
+.touch #cd-vertical-nav {
+	position: fixed;
+	z-index: 1;
+	right: 44px;
+	bottom: 44px;
+	width: 90%;
+	max-width: 400px;
+	max-height: 90%;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform-origin: right bottom;
+	-moz-transform-origin: right bottom;
+	-ms-transform-origin: right bottom;
+	-o-transform-origin: right bottom;
+	transform-origin: right bottom;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	border-radius: 0.25em;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.touch #cd-vertical-nav a {
+	display: block;
+	padding: 1em;
+	border-bottom: 1px solid rgba(62, 57, 71, 0.1);
+}
+
+.touch #cd-vertical-nav a span:first-child {
+	display: none;
+}
+
+.touch #cd-vertical-nav a.is-selected span:last-child {
+	color: #d88683;
+}
+
+.touch #cd-vertical-nav.open {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.touch #cd-vertical-nav.open + .cd-nav-trigger {
+	background-color: transparent;
+}
+
+.touch #cd-vertical-nav.open + .cd-nav-trigger span {
+	background-color: rgba(62, 57, 71, 0);
+}
+
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+	background-color: #3e3947;
+	height: 3px;
+	width: 20px;
+	border-radius: 0;
+	left: -8px;
+}
+
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 1px;
+}
+
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+	bottom: 0;
+}
+
+.touch #cd-vertical-nav li:last-child a {
+	border-bottom: none;
+}
+
+/* ================================================================
+/* ERROR CONTENT FOR IE < 9
+================================================================ */
+
+body.ie-error {
+	width: 100%;
+	height: 100%;
+}
+
+body.ie-error div {
+	width: 80%;
+	margin: 20% auto;
+	text-align: center;
+}
