@@ -1,44 +1,34 @@
 jQuery(document).ready(function($){
 
+	var	container = $('#page'),
+		video = document.getElementById('intro__video');
+
 	// if (supports_video() && !is_mobile()) {
 	if (supports_video()) {
-
-		var video = document.getElementById('intro_video');
-		var muteButton = document.getElementById('mute');
-		var play = document.getElementById('play');
-		
-		$(muteButton).show();
-		$(play).show();
-
-		video.addEventListener('ended', function() {
-			this.pause();
-			this.currentTime = 0;
-			this.load();
-		}, false);
-
-		muteButton.addEventListener('click', function() {
-			if ($(video).prop('muted')) {
-				$(video).prop('muted', false);
-				$(muteButton).removeClass('muted').addClass('unmuted');
-			} else {
-				$(video).prop('muted', true);
-				$(muteButton).removeClass('unmuted').addClass('muted');
-			}
-		}, false);
-
-		play.addEventListener('click', function() {
-			if (video.paused) {
-				video.play();
-			} else {
-				video.pause();
-			}
-		}, false);
-
-		video.play();
-
+		if ($('body').css('overflow') === 'hidden') {
+			$(container).scroll(function() {
+				$('video').each(function(){
+					if ($(this).is(":in-viewport( 0 )")) {
+						$(this)[0].play();
+					} else {
+						$(this)[0].pause();
+					}
+				});
+			});
+		} else {
+			$(window).scroll(function() {
+				$('video').each(function(){
+					if ($(this).is(":in-viewport( 0 )")) {
+						$(this)[0].play();
+					} else {
+						$(this)[0].pause();
+					}
+				});
+			});
+		}
 	} else {
 		$('video').hide();
-		$('img#fallback').show();
+		$('#intro__fallback').show();
 	}
 
 	function supports_video() {
