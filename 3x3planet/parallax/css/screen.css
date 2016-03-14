@@ -125,7 +125,6 @@ COMMON STYLES
 .slide__content{
 	position: relative;
 	width: 100%;
-	max-width: 1440px;
 	height: 100%;
 	margin: 0 auto;
 	padding: 3.2rem;
@@ -133,10 +132,11 @@ COMMON STYLES
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
-  align-items: center;
+	align-items: center;
 }
 
 .slide.solid .slide__content {
+	max-width: 1440px;
 	background-color: #fff;
 }
 
@@ -197,9 +197,6 @@ Z-indexes are needed for elevation definition
 
 #section1 {
 	z-index: 32;
-}
-#section1 .slide__background {
-	background: black;
 }
 
 #section2 {
@@ -263,15 +260,14 @@ header {
 	color: #fff;
 }
 
-header img {
+header #title img {
 	display: block;
 	width: 24%;
-	height: auto;
-	margin: 0 auto 4.8rem;
 	height: 4.8rem;
+	margin: 0 auto 4.8rem;
 }
 
-header h1 {
+header #title h1 {
 	margin: 0;
 	padding: 0;
 	font-size: 3.2rem;
@@ -279,12 +275,16 @@ header h1 {
 	text-transform: uppercase;
 }
 
-header h2{
+header #title h2{
 	margin: 0;
 	padding: 0;
 	font-size: 3.2rem;
 	line-height: 1;
 	text-transform: uppercase;
+}
+
+header #title__background {
+	background: black;
 }
 
 /* HEADER VIDEO */
