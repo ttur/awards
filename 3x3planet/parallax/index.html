@@ -8,13 +8,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 		<link href="image-assets/favicon.png" rel="icon" type="image/png" />
-		<link href="css/screen.css" bgelement="screen, projection" rel="stylesheet" type="text/css" />
-		<link href="css/screen_breakpoints.css" bgelement="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="css/screen_breakpoints.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<!--[if (!IE)|(IE 9)]><!-->
 		<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
 		<script type="text/javascript" src="js/modernizr-3.3.1.min-custom.js"></script>
 		<script type="text/javascript" src="js/isInViewport.min.js"></script>		
 		<script type="text/javascript" src="js/intro.js"></script>
+		<script type="text/javascript" src="js/navigation.js"></script>
 		<!--<![endif]-->
 	</head>
 	<!--[if lt IE 9]>
@@ -35,7 +36,7 @@
 		<!-- Google Tag Manager -->
 		<!-- End Google Tag Manager -->
 		<!-- Navigation -->
-		<nav id="cd-vertical-nav">
+		<nav>
 			<ol>
 				<li><a href="#intro" data-number="1"><span class="dot"></span><span class="label">Intro</span></a></li>
 				<li><a href="#background" data-number="2"><span class="dot"></span><span class="label">Background</span></a></li>
@@ -43,6 +44,7 @@
 				<li><a href="#approach" data-number="4"><span class="dot"></span><span class="label">Approach</span></a></li>
 				<li><a href="#impact" data-number="5"><span class="dot"></span><span class="label">Impact</span></a></li>
 				<li><a href="#details" data-number="6"><span class="dot"></span><span class="label">Details</span></a></li>
+				<li><a href="#end" data-number="7"><span class="dot"></span><span class="label">End</span></a></li>
 			</ol>
 		</nav>
 		<article id="page" class="slides">
@@ -82,7 +84,7 @@
 			<section id="background" class="slide solid">
 				<div class="slide__content">
 					<figure class="slide__media column__right">
-						<img src="image/section2.jpg" srcset="image-assets/section2.jpg 1x, image-assets/section2@2x.jpg 2x" alt="Venue from 2015 All-Star Game" />
+						<img src="image-assets/section2.jpg" srcset="image-assets/section2.jpg 1x, image-assets/section2@2x.jpg 2x" alt="Venue from 2015 All-Star Game" />
 					</figure>
 					<div class="slide__text column__left">
 						<h3>FIBA 3x3</h3>
@@ -195,7 +197,7 @@
 				</div>
 			</section>
 			<!-- Footer -->
-			<footer id="end">
+			<footer id="end" class="slide">
 				<div id="logos" class="vertical__center columns__two">
 					<div><a href="http://www.3x3planet.com/" title="3x3 Planet"><img src="image-assets/logo_3x3.svg" alt="3x3" height="128" /></a></div>
 					<div><a href="http://www.fiba.com/" title="FIBA"><img src="image-assets/logo_fiba.svg" alt="FIBA" height="128" /></a></div>
@@ -203,7 +205,7 @@
 				<div id="copy"><p>Copyright &copy; FIBA. All rights reserved.<br />By the way, we use cookies for analytics.</p></div>
 			</footer>
 		</article>
-		 <!-- Debug: Parallax effect	-->
+		 <!-- Debug: Parallax effect -->
 		<div class="parallax__debug">
 			<label><input id="parallax__debug" type="checkbox"> Debug</label>
 		</div>

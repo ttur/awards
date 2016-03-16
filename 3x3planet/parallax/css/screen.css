@@ -291,6 +291,10 @@ Z-indexes are needed for elevation definition
 	background-image: url('../image-assets/intro@2x.jpg');
 }
 
+#intro__fallback {
+	z-index: 33;
+}
+
 /* Content sections */
 
 #background {
@@ -298,7 +302,7 @@ Z-indexes are needed for elevation definition
 }
 
 #section-background-1 {
-	z-index: 33;
+	z-index: 34;
 }
 #section-background-1 .slide__background {
 	background-image: url('../image-assets/background1@2x.jpg');
@@ -309,7 +313,7 @@ Z-indexes are needed for elevation definition
 }
 
 #section-background-2 {
-	z-index: 34;
+	z-index: 35;
 }
 #section-background-2 .slide__background {
 	background-image: url('../image-assets/background2@2x.jpg');
@@ -320,7 +324,7 @@ Z-indexes are needed for elevation definition
 }
 
 #section-background-3 {
-	z-index: 35;
+	z-index: 36;
 }
 #section-background-3 .slide__background {
 	background-image: url('../image-assets/background3@2x.jpg');
@@ -331,7 +335,7 @@ Z-indexes are needed for elevation definition
 }
 
 #section-background-4 {
-	z-index: 36;
+	z-index: 37;
 }
 #section-background-4 .slide__background {
 	background-image: url('../image-assets/background4@2x.jpg');
@@ -415,7 +419,7 @@ header #title__background {
 
 /* HEADER VIDEO */
 
-#intro video, #intro__fallback video {
+#intro video, #intro__fallback video, #intro video img, #intro__fallback video img {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -445,7 +449,7 @@ section h3 {
 FOOTER
 ================================================================ */
 
-footer {
+footer.slide {
 	position: relative;
 	width: 100%;
 	height: 96vh;
@@ -758,6 +762,10 @@ nav a:hover span.dot {
 				0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
+nav a.selected span.dot {
+	background-color: rgba(0,0,0,0.9);
+}
+
 nav a span.label {
 	display: inline-block;
 	right: 32px;
@@ -793,6 +801,9 @@ nav a:hover span.label {
 	opacity: 1;
 }
 
+nav a.selected span.label {
+	background-color: rgba(0,0,0,0.9);
+}
 
 /* ================================================================
 /* ERROR CONTENT FOR IE < 9

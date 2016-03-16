@@ -3,11 +3,10 @@ jQuery(document).ready(function($){
 	var	container = $('#page'),
 		video = document.getElementById('intro__video');
 
-	// if (supports_video()) {
-	if (supports_video() && !is_mobile()) { 
+	if (supports_video() && !is_mobile()) {
 		if ($('body').css('overflow') === 'hidden') {
 			$(container).scroll(function() {
-				$('video').each(function(){
+				$(video).each(function(){
 					if ($(this).is(":in-viewport( 0 )")) {
 						$(this)[0].play();
 					} else {
@@ -17,7 +16,7 @@ jQuery(document).ready(function($){
 			});
 		} else {
 			$(window).scroll(function() {
-				$('video').each(function(){
+				$(video).each(function(){
 					if ($(this).is(":in-viewport( 0 )")) {
 						$(this)[0].play();
 					} else {
