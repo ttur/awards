@@ -32,6 +32,14 @@
 		display: none;
 	}
 
+	.no-videoautoplay #intro {
+		display: none;
+	}
+
+	.no-videoautoplay #intro__fallback {
+		display: block;
+	}
+
 	#background1 .slide__background {
 		background-image: url('../image-assets/background1.jpg');
 	}
