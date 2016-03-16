@@ -37,17 +37,17 @@
 		<!-- Navigation -->
 		<nav id="cd-vertical-nav">
 			<ol>
-				<li><a href="#section1" data-number="1"><span class="dot"></span><span class="label">Intro</span></a></li>
-				<li><a href="#section2" data-number="2"><span class="dot"></span><span class="label">Background</span></a></li>
-				<li><a href="#section3" data-number="3"><span class="dot"></span><span class="label">Challenge</span></a></li>
-				<li><a href="#section4" data-number="4"><span class="dot"></span><span class="label">Approach</span></a></li>
-				<li><a href="#section5" data-number="5"><span class="dot"></span><span class="label">Impact</span></a></li>
-				<li><a href="#section6" data-number="6"><span class="dot"></span><span class="label">Details</span></a></li>
+				<li><a href="#intro" data-number="1"><span class="dot"></span><span class="label">Intro</span></a></li>
+				<li><a href="#background" data-number="2"><span class="dot"></span><span class="label">Background</span></a></li>
+				<li><a href="#challenge" data-number="3"><span class="dot"></span><span class="label">Challenge</span></a></li>
+				<li><a href="#approach" data-number="4"><span class="dot"></span><span class="label">Approach</span></a></li>
+				<li><a href="#impact" data-number="5"><span class="dot"></span><span class="label">Impact</span></a></li>
+				<li><a href="#details" data-number="6"><span class="dot"></span><span class="label">Details</span></a></li>
 			</ol>
 		</nav>
 		<article id="page" class="slides">
 			<!-- Section 1 (Header): Intro -->
-			<header id="section1" class="slide background">
+			<header id="intro" class="slide background">
 				<div class="slide__content">
 					<div id="title" class="slide__foreground">
 						<div class="vertical__center">
@@ -58,18 +58,28 @@
 					</div>
 					<div id="title__overlay" class="slide__base"></div>
 					<div id="title__background" class="slide__background">
-						<div id="intro">
-							<video id="intro__video" poster="image-assets/intro.jpg" muted autoplay loop>
-								<source src="videos/intro.mp4" type="video/mp4" />
-								<source src="videos/intro.webm" type="video/webm" />
-								<source src="videos/intro.ogg" type="video/ogg" />
-							</video>
-						</div>
+						<video id="intro__video" poster="image-assets/intro.jpg" muted autoplay loop>
+							<source src="videos/intro.mp4" type="video/mp4" />
+							<source src="videos/intro.webm" type="video/webm" />
+							<source src="videos/intro.ogg" type="video/ogg" />
+						</video>
 					</div>
 				</div>
 			</header>
+			<!-- Fallback intro video for clients that don't support autoplay -->
+			<section id="intro__fallback" class="slide background">
+				<div class="slide__content">
+					<div class="slide__background">
+						<video poster="image-assets/intro.jpg" controls>
+							<source src="videos/intro.mp4" type="video/mp4" />
+							<source src="videos/intro.webm" type="video/webm" />
+							<source src="videos/intro.ogg" type="video/ogg" />
+						</video>
+					</div>
+				</div>
+			</section>
 			<!-- Section 2: Background -->
-			<section id="section2" class="slide solid">
+			<section id="background" class="slide solid">
 				<div class="slide__content">
 					<figure class="slide__media column__right">
 						<img src="image/section2.jpg" srcset="image-assets/section2.jpg 1x, image-assets/section2@2x.jpg 2x" alt="Venue from 2015 All-Star Game" />
@@ -83,13 +93,13 @@
 				</div>
 			</section>
 			<!-- Background image 1 -->
-			<section id="background1" class="slide background">
+			<section id="section-background-1" class="slide background">
 				<div class="slide__content">
 					<div class="slide__background"></div>
 				</div>
 			</section>
 			<!-- Section 3: Challenge -->
-			<section id="section3" class="slide solid">
+			<section id="challenge" class="slide solid">
 				<div class="slide__content">
 					<figure class="slide__media column__left">
 						<img src="image-assets/section3.jpg" srcset="image-assets/section3.jpg 1x, image-assets/section3@2x.jpg 2x" alt="World Tour event on Android" />
@@ -103,13 +113,13 @@
 				</div>
 			</section>
 			<!-- Background image 2 -->
-			<section id="background2" class="slide background">
+			<section id="section-background-2" class="slide background">
 				<div class="slide__content">
 					<div class="slide__background"></div>
 				</div>
 			</section>
 			<!-- Section: Approach -->
-			<section id="section4" class="slide solid">
+			<section id="approach" class="slide solid">
 				<div class="slide__content">
 					<figure class="slide__media column__right">
 						<img src="image-assets/section4.jpg" srcset="image-assets/section4.jpg 1x, image-assets/section4@2x.jpg 2x" alt="World Tour event on Android" />
@@ -123,13 +133,13 @@
 				</div>
 			</section>
 			<!-- Background image 3 -->
-			<section id="background3" class="slide background">
+			<section id="section-background-3" class="slide background">
 				<div class="slide__content">
 					<div class="slide__background"></div>
 				</div>
 			</section>
 			<!-- Section: Impact -->
-			<section id="section5" class="slide solid">
+			<section id="impact" class="slide solid">
 				<div class="slide__content">
 					<figure class="slide__media column__left">
 						<img src="image-assets/section5.jpg" srcset="image-assets/section5.jpg 1x, image-assets/section5@2x.jpg 2x" alt="Top ranked players on iPhone and player profile on Adroid" />
@@ -142,13 +152,13 @@
 				</div>
 			</section>
 			<!-- Background image 4 -->
-			<section id="background4" class="slide background">
+			<section id="section-background-4" class="slide background">
 				<div class="slide__content">
 					<div class="slide__background"></div>
 				</div>
 			</section>
-			<!-- Section: About -->
-			<section id="section6" class="slide solid">
+			<!-- Section: Details -->
+			<section id="details" class="slide solid">
 				<div class="slide__content">
 					<!-- Parallax fix: This fixes last slide bug with Google Chrome and retina display, you can this remove this if you use a parallax layer in the slide content -->
 					<div class="slide__fix"></div>
@@ -185,7 +195,7 @@
 				</div>
 			</section>
 			<!-- Footer -->
-			<footer id="section7">
+			<footer id="end">
 				<div id="logos" class="vertical__center columns__two">
 					<div><a href="http://www.3x3planet.com/" title="3x3 Planet"><img src="image-assets/logo_3x3.svg" alt="3x3" height="128" /></a></div>
 					<div><a href="http://www.fiba.com/" title="FIBA"><img src="image-assets/logo_fiba.svg" alt="FIBA" height="128" /></a></div>

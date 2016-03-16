@@ -32,7 +32,7 @@
 		display: none;
 	}
 
-	.no-videoautoplay #intro__video {
+	.no-videoautoplay #intro video {
 		display: none;
 	}
 
@@ -40,23 +40,23 @@
 		display: block !important;
 	}
 
-	#section1 .slide__background {
+	#intro .slide__background {
 		background-image: url('../image-assets/intro.jpg');
 	}
 
-	#background1 .slide__background {
+	#section-background-1 .slide__background {
 		background-image: url('../image-assets/background1.jpg');
 	}
 
-	#background2 .slide__background {
+	#section-background-2 .slide__background {
 		background-image: url('../image-assets/background2.jpg');
 	}
 
-	#background3 .slide__background {
+	#section-background-3 .slide__background {
 		background-image: url('../image-assets/background3.jpg');
 	}
 
-	#background4 .slide__background {
+	#section-background-4 .slide__background {
 		background-image: url('../image-assets/background4.jpg');
 	}
 
