@@ -32,12 +32,6 @@
 		display: none;
 	}
 
-	@supports ((not (-webkit-overflow-scrolling: touch)) {
-		.parallax__debug {
-			display: none;	
-		}
-	}
-
 	#background1 .slide__background {
 		background-image: url('../image-assets/background1.jpg');
 	}
@@ -128,6 +122,10 @@
 		-webkit-box-flex: 0 0 auto;
 		-moz-box-flex: 0 0 auto;
 		flex: 0 0 auto;
+	}
+
+	.parallax__debug {
+		display: none;	
 	}
 }
 
