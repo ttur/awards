@@ -117,7 +117,7 @@ COMMON STYLES
 	position: relative;
 	width: 100%;
 	height: 96vh;
-	min-height: 768px;
+	min-height: 640px;
 }
 
 .slide.solid {
@@ -146,6 +146,8 @@ COMMON STYLES
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
 }
@@ -249,6 +251,7 @@ COMMON STYLES
 	margin: 0;
 	border-radius: 8px;
 	padding: 0;
+	max-width: 100%;
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
 				0 1px 5px 0 rgba(0, 0, 0, 0.12),
 				0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -267,11 +270,11 @@ COMMON STYLES
 	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
 				0 3px 14px 2px rgba(0, 0, 0, 0.12),
 				0 5px 5px -3px rgba(0, 0, 0, 0.4);
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	transform: scale(1.2);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /* ================================================================
@@ -445,7 +448,7 @@ footer {
 	position: relative;
 	width: 100%;
 	height: 96vh;
-	min-height: 768px;
+	min-height: 640px;
 	text-align: center;
 	color: #fff;
 	background-color: #212121;
@@ -459,12 +462,6 @@ footer #logos{
 	max-width: 1440px;
 	margin: 0 auto;
 	line-height: 1;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-align-items: center;
-	align-items: center;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
@@ -472,7 +469,18 @@ footer #logos{
 	transform: translate(-50%,-50%);
 }
 
-footer #logos:after {
+footer .columns__two {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+footer .columns__two:after {
 	display: block;
 	visibility: hidden;
 	content: "";
@@ -484,12 +492,13 @@ footer #logos:after {
 
 footer .columns__two div {
 	float: left;
-	width: 25%;
+	width: auto;
 	height: auto;
+	padding: 1.6rem 3.2rem;
 	text-align: center;
-	-webkit-box-flex: 1 1 auto;
-	-moz-box-flex: 1 1 auto;
-	flex: 1 1 auto;
+	-webkit-box-flex: 1 1 content;
+	-moz-box-flex: 1 1 content;
+	flex: 1 1 content;
 	-webkit-box-ordinal-group: 1;  
 	-moz-box-ordinal-group: 1;     
 	-ms-flex-order: 1;     
@@ -499,6 +508,7 @@ footer .columns__two div {
 footer #logos a img {
 	display: inline-block;
 	height: 4.8rem;
+	max-width: 100%;
 	margin: 0;
 	padding: 0;
 	-webkit-transform: scale(1);
@@ -512,16 +522,16 @@ footer #logos a img {
 }
 
 footer #logos a:hover img {
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	transform: scale(1.2);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 footer #copy {
 	position: absolute;
-	bottom: 1rem;
+	bottom: 3.2rem;
 	left: 0;
 	right: 0;
 	font-size: 1rem;
@@ -702,11 +712,11 @@ nav a, nav a:hover, nav a:active, nav a:visited {
 nav a span {
 	position: absolute;
 	top: 0;
-	-webkit-transform: scale(0.75);
-	-moz-transform: scale(0.75);
-	-ms-transform: scale(0.75);
-	-o-transform: scale(0.75);
-	transform: scale(0.75);
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	-o-transform: scale(0.5);
+	transform: scale(0.5);
 }
 
 nav a:hover span {
@@ -725,7 +735,7 @@ nav a span.dot {
 	width: 16px;
 	border-radius: 50%;
 	border: 1px solid rgba(255,255,255,0.12);
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,0.38);
 	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
 				0 1px 18px 0 rgba(0, 0, 0, 0.12),
 				0 3px 5px -1px rgba(0, 0, 0, 0.4);
