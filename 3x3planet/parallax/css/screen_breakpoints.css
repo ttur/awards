@@ -44,6 +44,10 @@
 		background-image: url('../image-assets/intro.jpg');
 	}
 
+	.no-videoautoplay #intro .slide__background {
+		background-image: none;
+	}
+
 	#section-background-1 .slide__background {
 		background-image: url('../image-assets/background1.jpg');
 	}
