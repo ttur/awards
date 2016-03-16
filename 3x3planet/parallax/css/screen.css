@@ -287,6 +287,9 @@ Z-indexes are needed for elevation definition
 #section1 {
 	z-index: 32;
 }
+#section1 .slide__background {
+	background-image: url('../image-assets/intro@2x.jpg');
+}
 
 /* Content sections */
 

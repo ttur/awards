@@ -37,7 +37,11 @@
 	}
 
 	.no-videoautoplay #intro__fallback {
-		display: block;
+		display: block !important;
+	}
+
+	#section1 .slide__background {
+		background-image: url('../image-assets/intro.jpg');
 	}
 
 	#background1 .slide__background {
