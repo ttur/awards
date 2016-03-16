@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
 	if (supports_video()) {
 		if ($('body').css('overflow') === 'hidden') {
 			$(container).scroll(function() {
-				$('video').each(function(){
+				$(video).each(function(){
 					if ($(this).is(":in-viewport( 0 )")) {
 						$(this)[0].play();
 					} else {
@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 			});
 		} else {
 			$(window).scroll(function() {
-				$('video').each(function(){
+				$(video).each(function(){
 					if ($(this).is(":in-viewport( 0 )")) {
 						$(this)[0].play();
 					} else {
@@ -27,8 +27,7 @@ jQuery(document).ready(function($){
 			});
 		}
 	} else {
-		$('video').hide();
-		$('#intro__fallback').show();
+		$(video).hide();
 	}
 
 	function supports_video() {
