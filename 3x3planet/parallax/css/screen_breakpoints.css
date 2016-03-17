@@ -42,8 +42,12 @@
 		display: none;
 	}
 
-	.no-videoautoplay #intro.overlay #intro__video {
-		display: none;
+	.no-videoautoplay .title__hidden #title {
+		display: block;
+	}
+
+	.no-videoautoplay #intro__video {
+		display: none !important;
 	}
 
 	.no-videoautoplay #intro__fallback {
