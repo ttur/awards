@@ -399,7 +399,7 @@ header #title {
 	z-index: 3;
 }
 
-header.title__hidden #title {
+.title__hidden #title {
 	display: none;
 }
 

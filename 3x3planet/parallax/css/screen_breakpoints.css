@@ -42,11 +42,7 @@
 		display: none;
 	}
 
-	.no-videoautoplay .title__hidden #title {
-		display: block;
-	}
-
-	.no-videoautoplay #intro__video {
+	.no-videoautoplay #intro.overlay #intro__video {
 		display: none !important;
 	}
 
