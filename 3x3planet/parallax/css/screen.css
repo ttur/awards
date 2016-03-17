@@ -35,7 +35,7 @@ body {
 	line-height: 1.4;
 	font-weight: 200;
 	color: #212121;
-	background-color: #fff;
+	background-color: #212121;
 }
 
 article, header, section, footer, div {
@@ -624,11 +624,12 @@ http://keithclark.co.uk/articles/pure-css-parallax-websites/
 }
 
 /* ================================================================
-CSS PARALLAX EFFECT
+CSS PARALLAX EFFECT DEBUGGER
 Debugger styles - used to show the parallax effect
 ================================================================ */
 
 .parallax__debug {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 1rem;
