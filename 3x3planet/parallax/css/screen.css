@@ -185,7 +185,7 @@ COMMON STYLES
 .column__right {
 	float: right;
 	padding-left: 1.6rem;
-	-webkit-box-ordinal-group: 2;  
+	-webkit-box-ordinal-group: 2;
 	-moz-box-ordinal-group: 2;     
 	-ms-flex-order: 2;     
 	order: 2;
@@ -246,6 +246,10 @@ COMMON STYLES
 }
 
 .slide__fix {
+	display: none;
+}
+
+.hidden {
 	display: none;
 }
 

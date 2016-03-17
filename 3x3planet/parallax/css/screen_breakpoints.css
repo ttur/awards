@@ -42,7 +42,7 @@
 		display: none;
 	}
 
-	.no-videoautoplay #intro video {
+	.no-videoautoplay #intro.overlay #intro__video {
 		display: none;
 	}
 
