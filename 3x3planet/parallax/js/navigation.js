@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	var container = $('#page'),
-		contentSections = $('.slide'),
+		contentSections = $('.section'),
 		navigationItems = $('nav a');
 
 	updateNavigation();

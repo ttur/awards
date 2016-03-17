@@ -41,7 +41,7 @@
 	}
 
 	#intro .slide__background {
-		background-image: url('../image-assets/intro.jpg');
+		background-image: url('../image-assets/intro_background.jpg');
 	}
 
 	.no-videoautoplay #intro .slide__background {
@@ -49,19 +49,19 @@
 	}
 
 	#section-background-1 .slide__background {
-		background-image: url('../image-assets/background1.jpg');
+		background-image: url('../image-assets/section_background_1.jpg');
 	}
 
 	#section-background-2 .slide__background {
-		background-image: url('../image-assets/background2.jpg');
+		background-image: url('../image-assets/section_background_2.jpg');
 	}
 
 	#section-background-3 .slide__background {
-		background-image: url('../image-assets/background3.jpg');
+		background-image: url('../image-assets/section_background_3.jpg');
 	}
 
 	#section-background-4 .slide__background {
-		background-image: url('../image-assets/background4.jpg');
+		background-image: url('../image-assets/section_background_4.jpg');
 	}
 
 	.slides, .slide, .slide__content, .column__left, .column__right {
@@ -126,13 +126,13 @@
 		margin-bottom: 3.2rem;
 	}
 
-	footer .columns__two {
+	footer #logos {
 		display: block;
 		width: 100%;
 		min-height: 0;
 	}
 
-	footer .columns__two div {
+	footer #logos div {
 		float: none;
 		display: block;
 		-webkit-box-flex: 0 0 auto;

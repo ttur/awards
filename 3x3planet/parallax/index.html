@@ -44,23 +44,23 @@
 				<li><a href="#approach" data-number="4"><span class="dot"></span><span class="label">Approach</span></a></li>
 				<li><a href="#impact" data-number="5"><span class="dot"></span><span class="label">Impact</span></a></li>
 				<li><a href="#details" data-number="6"><span class="dot"></span><span class="label">Details</span></a></li>
-				<li><a href="#end" data-number="7"><span class="dot"></span><span class="label">End</span></a></li>
+				<li><a href="#outro" data-number="7"><span class="dot"></span><span class="label">Outro</span></a></li>
 			</ol>
 		</nav>
 		<article id="page" class="slides">
 			<!-- Section 1 (Header): Intro -->
-			<header id="intro" class="slide background">
+			<header id="intro" class="section slide background">
 				<div class="slide__content">
 					<div id="title" class="slide__foreground">
 						<div class="vertical__center">
-							<img src="image-assets/logo_3x3.svg" alt="3x3" height="128" />
+							<img src="image-assets/intro_logo.png" alt="FIBA 3x3" height="128" />
 							<h1>3x3 Planet</h1>
 							<h2>Mobile Apps</h2>
 						</div>
 					</div>
 					<div id="title__overlay" class="slide__base"></div>
 					<div id="title__background" class="slide__background">
-						<video id="intro__video" poster="image-assets/intro.jpg" muted autoplay loop>
+						<video id="intro__video" poster="image-assets/intro_poster.jpg" muted autoplay loop>
 							<source src="videos/intro.mp4" type="video/mp4" />
 							<source src="videos/intro.webm" type="video/webm" />
 							<source src="videos/intro.ogg" type="video/ogg" />
@@ -72,7 +72,7 @@
 			<section id="intro__fallback" class="slide background">
 				<div class="slide__content">
 					<div class="slide__background">
-						<video poster="image-assets/intro.jpg" controls>
+						<video poster="image-assets/intro_poster.jpg" controls>
 							<source src="videos/intro.mp4" type="video/mp4" />
 							<source src="videos/intro.webm" type="video/webm" />
 							<source src="videos/intro.ogg" type="video/ogg" />
@@ -81,10 +81,10 @@
 				</div>
 			</section>
 			<!-- Section 2: Background -->
-			<section id="background" class="slide solid">
+			<section id="background" class="section slide solid">
 				<div class="slide__content">
 					<figure class="slide__media column__right">
-						<img src="image-assets/section2.jpg" srcset="image-assets/section2.jpg 1x, image-assets/section2@2x.jpg 2x" alt="Venue from 2015 All-Star Game" />
+						<img src="image-assets/background.jpg" srcset="image-assets/background.jpg 1x, image-assets/background@2x.jpg 2x" alt="Venue from 2015 All-Star Game" />
 					</figure>
 					<div class="slide__text column__left">
 						<h3>FIBA 3x3</h3>
@@ -101,10 +101,10 @@
 				</div>
 			</section>
 			<!-- Section 3: Challenge -->
-			<section id="challenge" class="slide solid">
+			<section id="challenge" class="section slide solid">
 				<div class="slide__content">
 					<figure class="slide__media column__left">
-						<img src="image-assets/section3.jpg" srcset="image-assets/section3.jpg 1x, image-assets/section3@2x.jpg 2x" alt="World Tour event on Android" />
+						<img src="image-assets/challenge.jpg" srcset="image-assets/challenge.jpg 1x, image-assets/challenge@2x.jpg 2x" alt="World Tour event on Android" />
 					</figure>
 					<div class="slide__text column__right">
 						<h3>Challenge</h3>
@@ -121,10 +121,10 @@
 				</div>
 			</section>
 			<!-- Section: Approach -->
-			<section id="approach" class="slide solid">
+			<section id="approach" class="section slide solid">
 				<div class="slide__content">
 					<figure class="slide__media column__right">
-						<img src="image-assets/section4.jpg" srcset="image-assets/section4.jpg 1x, image-assets/section4@2x.jpg 2x" alt="World Tour event on Android" />
+						<img src="image-assets/approach.jpg" srcset="image-assets/approach.jpg 1x, image-assets/approach@2x.jpg 2x" alt="World Tour event on Android" />
 					</figure>
 					<div class="slide__text column__left">
 						<h3>Approach</h3>
@@ -141,10 +141,10 @@
 				</div>
 			</section>
 			<!-- Section: Impact -->
-			<section id="impact" class="slide solid">
+			<section id="impact" class="section slide solid">
 				<div class="slide__content">
 					<figure class="slide__media column__left">
-						<img src="image-assets/section5.jpg" srcset="image-assets/section5.jpg 1x, image-assets/section5@2x.jpg 2x" alt="Top ranked players on iPhone and player profile on Adroid" />
+						<img src="image-assets/impact.jpg" srcset="image-assets/impact.jpg 1x, image-assets/impact@2x.jpg 2x" alt="Top ranked players on iPhone and player profile on Adroid" />
 					</figure>
 					<div class="slide__text column__right">
 						<h3>Impact</h3>
@@ -160,7 +160,7 @@
 				</div>
 			</section>
 			<!-- Section: Details -->
-			<section id="details" class="slide solid">
+			<section id="details" class="section slide solid">
 				<div class="slide__content">
 					<!-- Parallax fix: This fixes last slide bug with Google Chrome and retina display, you can this remove this if you use a parallax layer in the slide content -->
 					<div class="slide__fix"></div>
@@ -197,10 +197,17 @@
 				</div>
 			</section>
 			<!-- Footer -->
-			<footer id="end" class="slide">
+			<footer id="outro" class="section">
 				<div id="logos" class="vertical__center columns__two">
-					<div><a href="http://www.3x3planet.com/" title="3x3 Planet"><img src="image-assets/logo_3x3.svg" alt="3x3" height="128" /></a></div>
-					<div><a href="http://www.fiba.com/" title="FIBA"><img src="image-assets/logo_fiba.svg" alt="FIBA" height="128" /></a></div>
+					<div>
+						<a href="http://www.3x3planet.com/" title="FIBA 3x3"><img src="image-assets/outro_logo_1.png" srcset="image-assets/outro_logo_1.png 1x, image-assets/outro_logo_1@2x.png 2x" alt="3x3" height="128" /></a>
+					</div>
+					<div>
+						<a href="http://www.fiba.com/" title="FIBA"><img src="image-assets/outro_logo_2.png" srcset="image-assets/outro_logo_2.png 1x, image-assets/outro_logo_2@2x.png 2x" alt="FIBA" height="128" /></a>
+					</div>
+					<div>
+						<a href="http://www.futurice.com/" title="Futurice"><img src="image-assets/outro_logo_3.png" srcset="image-assets/outro_logo_3.png 1x, image-assets/outro_logo_3@2x.png 2x" alt="Futurice" height="128" /></a>
+					</div>
 				</div>
 				<div id="copy"><p>Copyright &copy; FIBA. All rights reserved.<br />By the way, we use cookies for analytics.</p></div>
 			</footer>
