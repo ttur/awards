@@ -38,7 +38,7 @@ body {
 	background-color: #212121;
 }
 
-article, header, section, footer, div {
+article, header, section, footer, div, figure, figcaption, video {
 	margin: 0;
 	padding: 0;
 }
@@ -72,10 +72,17 @@ dl dt {
 	text-transform: uppercase;
 }
 
-figure, video{
+figure, figcaption, video{
 	display: block;
-	margin: 0;
-	padding: 0;
+	text-align: center;
+}
+
+figure video {
+	margin: 0 auto;
+}
+
+figcaption {
+	margin-top: 0.5em;
 }
 
 strong {
@@ -117,7 +124,7 @@ COMMON STYLES
 	position: relative;
 	width: 100%;
 	height: 96vh;
-	min-height: 640px;
+	min-height: 768px;
 }
 
 .slide.solid {
@@ -154,11 +161,7 @@ COMMON STYLES
 
 .slide.solid .slide__content {
 	max-width: 1440px;
-	padding: 3.2rem;
-}
-
-.slide__media img, .slide__media video{
-	width: 100%;
+	padding: 4.8rem;
 }
 
 .column__left, .column__right {
@@ -196,6 +199,15 @@ COMMON STYLES
 	flex: 1 1 auto;
 }
 
+.column__left img, .column__left video, .column__right img, .column__right video{
+	width: 100%;
+}
+
+.column__full img, .column__full video {
+	max-width: 75%;
+	max-height: 75%;
+}
+
 .slide__content:after {
 	display: block;
 	visibility: hidden;
@@ -216,7 +228,7 @@ COMMON STYLES
 	background-color: #000;
 }
 
-.vertical__center {
+.align__middle {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -229,7 +241,11 @@ COMMON STYLES
 	transform: translateY(-50%);
 }
 
-.parallax__fix {
+.align__center {
+	text-align: center;
+}
+
+.slide__fix {
 	display: none;
 }
 
@@ -412,7 +428,7 @@ header #title__overlay {
 }
 
 header #title__background {
-	background: black;
+	background-color: #000;
 	z-index: 1;
 }
 
@@ -452,7 +468,7 @@ footer {
 	position: relative;
 	width: 100%;
 	height: 96vh;
-	min-height: 640px;
+	min-height: 768px;
 	text-align: center;
 	color: #fff;
 	background-color: #212121;
@@ -461,16 +477,15 @@ footer {
 footer #logos{
 	position: absolute;
 	top: 50%;
-	left: 50%;
 	width: 100%;
 	margin: 0 auto;
 	line-height: 1;
 	text-align: center;
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -522,7 +537,7 @@ footer #logos a:hover img {
 
 footer #copy {
 	position: absolute;
-	bottom: 3.2rem;
+	bottom: 1.6rem;
 	left: 0;
 	right: 0;
 	font-size: 1rem;
@@ -566,7 +581,7 @@ http://keithclark.co.uk/articles/pure-css-parallax-websites/
 			transform-style: preserve-3d;
 		}
 
-		.slide__background, .slide__base, .slide__foreground, .slide__fix {
+		.background .slide__background, .background .slide__base, .background .slide__foreground {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -574,14 +589,6 @@ http://keithclark.co.uk/articles/pure-css-parallax-websites/
 			bottom: 0;
 			width: 100%;
 			height: 100%;
-		}
-
-		.slide__media.column__left {
-			transform-origin: 100% 50%;
-		}
-
-		.slide__media.column__right {
-			transform-origin: 0% 50%;
 		}
 
 		.slide__background {
@@ -593,7 +600,7 @@ http://keithclark.co.uk/articles/pure-css-parallax-websites/
 			z-index: 1;
 		}
 
-		.slide__base, .slide__text {
+		.slide__base {
 			-webkit-transform: translateZ(0);
 			-moz-transform: translateZ(0);
 			-ms-transform: translateZ(0);
@@ -602,23 +609,31 @@ http://keithclark.co.uk/articles/pure-css-parallax-websites/
 			z-index: 2;
 		}
 
-		.slide__foreground, .slide__media, .slide__fix {
+		.slide__foreground {
 			-webkit-transform: translateZ(96px) scale(.68);
 			transform: translateZ(96px) scale(.68);
 			z-index: 3;
 		}
 
-		.slide__fix {
-			display: block;
-			pointer-events: none;
+		.slide__foreground.column__left {
+			transform-origin: 100% 50%;
 		}
 
-		footer {
-			-webkit-transform: translateZ(0);
-			-moz-transform: translateZ(0);
-			-ms-transform: translateZ(0);
-			-o-transform: translateZ(0);
-			transform: translateZ(0);
+		.slide__foreground.column__right {
+			transform-origin: 0% 50%;
+		}
+
+		.slide__fix {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1px;
+			height: 1px;
+			pointer-events: none;
+			-webkit-transform: translateZ(96px) scale(.68);
+			transform: translateZ(96px) scale(.68);
+			z-index: 3;
 		}
 	}
 }
@@ -656,7 +671,7 @@ Debugger styles - used to show the parallax effect
 	transform: translate3d(700px, 0, -800px) rotateY(30deg);
 }
 
-.parallax__debug-on .slide__background, .parallax__debug-on .slide__base, .parallax__debug-on .slide__foreground, .parallax__debug-on .slide__text, .parallax__debug-on .slide__media {
+.parallax__debug-on .slide__background, .parallax__debug-on .slide__base, .parallax__debug-on .slide__foreground {
 	box-shadow: 0 0 0 2px #000;
 	opacity: 0.9;
 }

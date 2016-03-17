@@ -59,39 +59,23 @@
 						</div>
 					</div>
 					<div id="title__overlay" class="slide__base"></div>
-					<div id="title__background" class="slide__background">
-						<video id="intro__video" poster="image-assets/intro_poster.jpg" muted autoplay loop>
-							<source src="videos/intro.mp4" type="video/mp4" />
-							<source src="videos/intro.webm" type="video/webm" />
-							<source src="videos/intro.ogg" type="video/ogg" />
-						</video>
-					</div>
+					<div id="title__background" class="slide__background"></div>
 				</div>
 			</header>
-			<!-- Fallback intro video for clients that don't support autoplay -->
-			<section id="intro__fallback" class="slide background">
+			<!-- Section 2: Background -->
+			<section id="background" class="section slide solid">
 				<div class="slide__content">
-					<div class="slide__background">
+					<!-- Parallax fix: This fixes last slide bug with Google Chrome and retina display, you can this remove this if you use other than base parallax layer in the slide content -->
+					<div class="slide__fix"></div>
+					<!-- End of Parallax fix -->
+					<figure class="slide__base column__full">
 						<video poster="image-assets/intro_poster.jpg" controls>
 							<source src="videos/intro.mp4" type="video/mp4" />
 							<source src="videos/intro.webm" type="video/webm" />
 							<source src="videos/intro.ogg" type="video/ogg" />
 						</video>
-					</div>
-				</div>
-			</section>
-			<!-- Section 2: Background -->
-			<section id="background" class="section slide solid">
-				<div class="slide__content">
-					<figure class="slide__foreground column__right">
-						<img src="image-assets/background.jpg" srcset="image-assets/background.jpg 1x, image-assets/background@2x.jpg 2x" alt="Venue from 2015 All-Star Game" />
+						<figcaption>Introduction to 3x3 basketball</figcaption>
 					</figure>
-					<div class="slide__base column__left">
-						<h3>FIBA 3x3</h3>
-						<p><strong>Taking a grassroots sport played in parks, driveways and at community courts all the way to the Olympics.</strong></p>
-						<p>FIBA is the world governing body for basketball, formed by 215 independent national associations from all over the world. The International Olympic Committee recognizes FIBA as the sole competent authority on basketball. More info about FIBA at <a href="http://www.fiba.com/" title="FIBA.com website">FIBA.com.</a></p>
-						<p>3x3 basketball, where teams play three a side into one hoop, gets more popular every year - especially among younger players, with 15-19 being a particularly strong demography.</p>
-					</div>
 				</div>
 			</section>
 			<!-- Background image 1 -->
@@ -165,21 +149,7 @@
 					<!-- Parallax fix: This fixes last slide bug with Google Chrome and retina display, you can this remove this if you use other than base parallax layer in the slide content -->
 					<div class="slide__fix"></div>
 					<!-- End of Parallax fix -->
-					<div id="about" class="slide__base column__left">
-						<h3>About</h3>
-						<dl>
-							<dt>Client</dt>
-							<dd>International Basketball Federation (FIBA), FIBA 3x3</dd>
-							<dt>Design</dt>
-							<dd>Futurice / FIBA 3x3</dd>
-							<dt>App and Mobile Backend* Development</dt>
-							<dd>Futurice / FIBA 3x3</dd>
-							<dt>Video production</dt>
-							<dd>George Bucur Productions</dd>
-						</dl>
-						<p>* The mobile backend leverages FIBA 3x3 Database developed by Penceo Sport and ST Sportservice GmbH</p>
-					</div>
-					<div id="links" class="slide__base column__right">
+					<div id="links" class="slide__base column__full align__center">
 						<h3>Downloads</h3>
 						<ul>
 							<!-- iOS -->
@@ -201,7 +171,6 @@
 				<div id="logos" class="columns__two align__middle">
 					<div><a href="http://www.3x3planet.com/" title="3x3 Planet website"><img src="image-assets/outro_logo_1.png" srcset="image-assets/outro_logo_1.png 1x, image-assets/outro_logo_1@2x.png 2x" alt="3x3" height="128" /></a></div>
 					<div><a href="http://www.fiba.com/" title="FIBA website"><img src="image-assets/outro_logo_2.png" srcset="image-assets/outro_logo_2.png 1x, image-assets/outro_logo_2@2x.png 2x" alt="FIBA" height="128" /></a></div>
-					<div><a href="http://www.futurice.com/" title="Futurice website"><img src="image-assets/outro_logo_3.png" srcset="image-assets/outro_logo_3.png 1x, image-assets/outro_logo_3@2x.png 2x" alt="Futurice" height="128" /></a></div>
 				</div>
 				<div id="copy"><p>Copyright &copy; FIBA. All rights reserved.<br />By the way, we use cookies for analytics.</p></div>
 			</footer>
