@@ -8,11 +8,6 @@
 	html {
 		font-size: 112.5%;
 	}
-
-	#title img {
-		margin-bottom: 3.2rem;
-		height: 3.2rem;
-	}
 }
 
 @media screen and (max-width: 1368px) {
@@ -79,29 +74,11 @@
 		text-align: center;
 	}
 
-	#info .left {
-		margin-bottom: 3.2rem;
-	}
-
 	.bgimage {
 		padding-top: 75%;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
-	}
-
-	#image1 {
-		/*padding-top: 70%;*/
-		background-image: url('../images/bg_arvostelut@2x.jpg');
-	}
-
-	#image2 {
-		background-image: url('../images/bg_kaupassa@2x.jpg');
-		background-position: 33% 50%;
-	}
-
-	#image3 {
-		background-image: url('../images/bg_kotona@2x.jpg');
 	}
 
 }
