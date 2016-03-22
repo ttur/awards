@@ -1,0 +1,30 @@
+/* FONTS */
+
+/* Body regular */
+
+@font-face {
+	font-family: Body-Regular;
+	src:url('../fonts/LatoLatin-Regular.eot');
+	src:url('../fonts/LatoLatin-Regular.woff2');
+	src:url('../fonts/LatoLatin-Regular.woff');
+	src:url('../fonts/LatoLatin-Regular.ttf');
+}
+
+/* Body bold */
+
+@font-face {
+	font-family: Body-Bold;
+	src:url('../fonts/LatoLatin-Bold.eot');
+	src:url('../fonts/LatoLatin-Bold.woff2');
+	src:url('../fonts/LatoLatin-Bold.woff');
+	src:url('../fonts/LatoLatin-Bold.ttf');
+}
+
+/* Title */
+
+@font-face {
+	font-family: Title;
+	src:url('../fonts/UnitedSansReg-Black.eot');
+	src:url('../fonts/UnitedSansReg-Black.woff');
+	src:url('../fonts/UnitedSansReg-Black.ttf');
+}
