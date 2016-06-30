@@ -611,6 +611,11 @@ footer #logos div {
 	align-self: auto;
 }
 
+footer #logos a {
+	border: 0;
+	text-decoration: none;
+}
+
 footer #logos a img {
 	display: inline-block;
 	height: 3.2rem; /* 4.8 */
