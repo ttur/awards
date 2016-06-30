@@ -127,7 +127,7 @@ COMMON STYLES
 .slide {
 	position: relative;
 	width: 100%;
-	height: 96vh;
+	height: 90vh;
 	min-height: 768px;
 }
 
@@ -311,12 +311,23 @@ Z-indexes are needed for elevation definition
 #intro {
 	z-index: 32;
 }
-#intro .slide__background {
+
+#intro .slide__background, #title__background {
 	background-image: url('../image-assets/intro_background@2x.jpg');
 }
 
 #intro__fallback {
 	z-index: 33;
+}
+
+#title__background {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #000;
 }
 
 /* Content sections */
@@ -472,7 +483,7 @@ header #title__background {
 	display: block !important;
 }
 
-.no-videoautoplay #intro.overlay #intro__video, .mobile__video #intro.overlay #intro__video {
+.no-videoautoplay #intro #intro__video, .mobile__video #intro #intro__video {
 	display: none !important;
 }
 
@@ -628,6 +639,13 @@ http://keithclark.co.uk/articles/pure-css-parallax-websites/
 			background-size: cover;
 			-webkit-transform: translateZ(-256px) scale(2);
 			transform: translateZ(-256px) scale(2);
+			z-index: 1;
+		}
+
+		.slide__background, #title__background {
+			background-attachment: scroll;
+			background-position: 50% 50%;
+			background-size: cover;
 			z-index: 1;
 		}
 

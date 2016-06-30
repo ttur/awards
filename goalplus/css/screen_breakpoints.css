@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 1440px) {
 	html {
-		font-size: 100%; /* 112.5% */
+		font-size: 93.75%; /* 112.5% */
 	}
 }
 
@@ -46,7 +46,7 @@
 		background-color: #fff;
 	}
 
-	#intro .slide__background {
+	#intro .slide__background, #title__background {
 		background-image: url('../image-assets/intro_background.jpg');
 	}
 
@@ -120,13 +120,13 @@
 		height: 100%;
 	}
 
-	.slide__background {
+	.slide__background, #title__background {
 		height: auto;
 		background-size: cover;
 		background-attachment: scroll;
 	}
 
-	.background .slide__background {
+	.background .slide__background, #title__background {
 		height: 100%;
 	}
 
