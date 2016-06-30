@@ -71,6 +71,7 @@
 	}
 
 	.slides, .slide, .slide__content, .column__left, .column__right {
+		float: none;
 		display: block;
 		width: 100%;
 		min-height: 0;
@@ -153,6 +154,7 @@
 	}
 
 	footer #logos div {
+		float: none;
 		display: block;
 		-webkit-box-flex: 0;
 		-moz-box-flex: 0;
