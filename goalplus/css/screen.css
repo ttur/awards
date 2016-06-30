@@ -35,6 +35,10 @@ body {
 	line-height: 1.4;
 	font-weight: 200;
 	color: #212121;
+	background-color: #0d3e95;
+}
+
+body.ie-error {
 	background-color: #fff;
 }
 
@@ -427,7 +431,7 @@ PAGE
 ================================================================ */
 
 article {
-	background-color: #fff;
+	background-color: #0d3e95;
 }
 
 /* ================================================================
@@ -654,7 +658,7 @@ footer #copy {
 /* ================================================================
 CSS PARALLAX EFFECT
 http://keithclark.co.uk/articles/pure-css-parallax-websites/
-================================================================
+================================================================ */
 
 @media screen and (min-width: 1024px) {
 	@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
