@@ -35,7 +35,7 @@ body {
 	line-height: 1.4;
 	font-weight: 200;
 	color: #212121;
-	background-color: #0d3e95;
+	background-color: #fff;
 }
 
 article, header, section, footer, div, figure, figcaption, video {
@@ -395,7 +395,7 @@ PAGE
 ================================================================ */
 
 article {
-	background-color: #0d3e95;
+	background-color: #fff;
 }
 
 /* ================================================================
@@ -590,7 +590,7 @@ footer #copy {
 /* ================================================================
 CSS PARALLAX EFFECT
 http://keithclark.co.uk/articles/pure-css-parallax-websites/
-================================================================ */
+================================================================
 
 @media screen and (min-width: 1024px) {
 	@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
