@@ -207,7 +207,6 @@ COMMON STYLES
 }
 
 .column__left {
-	float: left;
 	padding-right: 3.2rem; /* 1.6 */
 	-webkit-box-ordinal-group: 1;
 	-moz-box-ordinal-group: 1;
@@ -217,7 +216,6 @@ COMMON STYLES
 }
 
 .column__right {
-	float: right;
 	padding-left: 3.2rem; /* 1.6 */
 	-webkit-box-ordinal-group: 2;
 	-moz-box-ordinal-group: 2;
