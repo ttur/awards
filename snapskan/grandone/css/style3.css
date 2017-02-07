@@ -1,0 +1,36 @@
+@media screen and (max-width: 800px) {
+	html {
+		font-size: 92.5%;
+	}
+
+	footer #credits > div{
+		font-size: 110%;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 85%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	html {
+		font-size: 75%;
+	}
+}
+/*
+
+@media screen and (max-width: 480px) {
+	html {
+		font-size: 68.75%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+*/
