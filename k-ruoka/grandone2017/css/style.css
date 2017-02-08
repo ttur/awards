@@ -74,6 +74,10 @@ ul.results li {
 }
 
 .results-grid {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
