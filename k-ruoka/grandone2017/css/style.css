@@ -452,6 +452,7 @@ footer .participants span {
 		background-position: 33% 50%;
 		position: relative;
 	}
+	/*
 	#image2::after {
 		content: '';
 		background: url('../images/data-link-bg.png') no-repeat 100% 50%;
@@ -462,6 +463,7 @@ footer .participants span {
 		top:0;
 		bottom: 0;
 	}
+	*/
 
 	#image3 {
 		background-image: url('../images/03-analytics.jpg');
