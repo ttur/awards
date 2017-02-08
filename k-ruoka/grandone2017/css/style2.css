@@ -124,24 +124,6 @@
 		background-attachment: scroll;
 	}
 
-	#image1 {
-		/*padding-top: 70%;*/
-		background-image: url('../images/01-development.jpg');
-	}
-
-	#image2 {
-		background-image: url('../images/02-features.jpg');
-		background-position: 33% 50%;
-	}
-
-	#image3 {
-		background-image: url('../images/03-analytics.jpg');
-	}
-
-	#image4 {
-		background-image: url('../images/04-results.jpg');
-	}
-
 
 	footer {
 		text-align: center;
