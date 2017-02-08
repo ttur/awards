@@ -19,6 +19,7 @@ body {
 	font-weight: normal;
 	line-height: 1.6rem;
 	color: #000;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1, h2 {
@@ -30,6 +31,7 @@ h1, h2 {
 	line-height: 1;
 	text-transform: none;
 	color: #D02545;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -349,6 +351,12 @@ footer .participants span {
 .container figure img {
 	width: 100%;
 	height: auto;
+}
+
+.clearfix {
+	display: table;
+	clear:both;
+	content: '';
 }
 
 #info div {
