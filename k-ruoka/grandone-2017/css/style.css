@@ -260,19 +260,23 @@ footer #logos{
 footer #logos, footer #logos a {
 	padding: 0;
 }
-
-footer #logos span {
-		color:#D02545;
-		display: block;
+footer #logos a {
+	margin-right: 10px;
 }
 
-footer #logos a {	
+footer #logos span {
+	color: #D02545;
+	display: block;
+	font-weight: bold;
+}
+
+footer #logos a {
 	display: inline-block;
 	width: auto;
 }
 
 footer #logos a img {
-	max-height: 5.4rem;	
+	max-height: 5.4rem;
 }
 
 
@@ -284,8 +288,9 @@ footer #credits{
 footer #credits > div{
 	float: left;
 	display: inline-block;
-	width:33%;
-	color:#D02545;
+	width: 33%;
+	color: #D02545;
+	font-weight: bold;
 }
 
 footer #credits img {
@@ -403,8 +408,9 @@ footer .participants span {
 	line-height: 1.2rem;
 	font-style: italic;
 }
-.quote .text .no-italic {
+.quote .emoticons {
 	font-style: normal;
+	letter-spacing: 4px;
 }
 
 
