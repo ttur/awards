@@ -1,0 +1,146 @@
+@media screen and (max-width: 1920px) {
+	html {
+		font-size: 118.25%;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	html {
+		font-size: 112.5%;
+	}
+
+	h1, h2 {
+		font-size: 2.8rem;
+	}
+
+	#title img {
+		margin-bottom: 3.2rem;
+		height: 3.2rem;
+	}
+}
+
+@media screen and (max-width: 1368px) {
+	html {
+		font-size: 106.25%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	html {
+		font-size: 100%;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.container .left--overlap{
+		overflow: visible;
+	}
+	.container figure .img--overlap-right{
+		position: relative;
+		right: -10%;
+		width: 120%;
+	}
+	.right--overlapped{
+		position: relative;
+		z-index: 2;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 93.75%;
+	}
+
+	header #title h1, .container, footer div {
+		width: 90%;
+	}
+
+	footer, .container {
+		padding: 3.2rem 0;
+	}
+
+	footer p {
+		margin-top: 3.2rem;
+	}
+
+	.container {
+		height: auto !important;
+	}
+
+	.container .left, .container .right, footer #credits > div, #quotes > .col{
+		float: none !important;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.full-container--grey .container{
+		max-width: none;
+	}
+
+	#quotes > .col{
+		margin: 1rem auto;
+	}
+
+	footer .category-title {
+		margin-bottom: 0;
+	}
+
+	footer #credits > div{
+		margin-top:3.5rem;
+	}
+	footer #credits > div img, footer #credits > div img.smaller{
+		margin-top:0.75rem;
+	}
+
+	footer #logos p{
+		margin-top: 2rem
+	}
+
+	footer #logos a{
+		display: block;
+		margin-bottom: 1rem;
+	}
+
+	.container figure {
+		width: 75% !important;
+		margin-bottom: 3.2rem !important;
+	}
+
+	#info .left {
+		margin-bottom: 3.2rem;
+	}
+
+	.bgimage {
+		padding-top: 75%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+	}
+
+	#image1 {
+		/*padding-top: 70%;*/
+		background-image: url('../images/bg_arvostelut@2x.jpg');
+	}
+
+	#image2 {
+		background-image: url('../images/bg_kaupassa@2x.jpg');
+		background-position: 33% 50%;
+	}
+
+	#image3 {
+		background-image: url('../images/bg_kotona@2x.jpg');
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	footer .participants {
+		font-size: 100%;
+	}
+
+	footer #credits img {
+		margin: 20px auto;
+	}
+}
