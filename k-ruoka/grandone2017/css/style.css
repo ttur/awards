@@ -73,6 +73,24 @@ ul.results li {
 	margin-bottom: 10px;
 }
 
+.results-grid {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.results-grid img {
+	display: block;
+	margin: 0 auto 15px;
+	max-width: 100px;
+}
+.results-grid > div {
+	padding: 0 2%;
+	width: 46%;
+	margin: 0 0 10px;
+	font-size: 0.9em;
+	line-height: 1.4;
+}
+
 strong {
 	font-family: 'proxima-nova', sans-serif;
 	font-weight: bold;
@@ -426,18 +444,23 @@ footer .participants span {
 	background-repeat: no-repeat;
 }
 
-#image1 {
-	background-image: url('../images/bg_arvostelut@2x.jpg');
-}
+	#image1 {
+		background-size: 100% auto;
+		background-image: url('../images/01-development.jpg');
+	}
 
-#image2 {
-	background-image: url('../images/bg_kaupassa@2x.jpg');
-}
+	#image2 {
+		background-image: url('../images/02-features.jpg');
+		background-position: 33% 50%;
+	}
 
-#image3 {
-	background-image: url('../images/bg_kotona@2x.jpg');
-}
+	#image3 {
+		background-image: url('../images/03-analytics.jpg');
+	}
 
+	#image4 {
+		background-image: url('../images/04-results.jpg');
+	}
 
 /* IE < 9 */
 .ie-error div {
