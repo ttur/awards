@@ -47,6 +47,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+
 	html {
 		font-size: 93.75%;
 	}
@@ -72,6 +73,11 @@
 		width: 100%;
 		height: auto;
 		margin: 0 auto;
+	}
+
+	#analytics {
+		background-position: 100% 0;
+		padding-top: 550px;
 	}
 
 	.full-container--grey .container{
@@ -148,4 +154,14 @@
 	footer #credits img {
 		margin: 20px auto;
 	}
+}
+
+
+@media screen and (max-width: 768px) {
+	#analytics {
+		background-position: 100% 0;
+		background-size: 460px auto;
+		padding-top: 450px;
+	}
+
 }

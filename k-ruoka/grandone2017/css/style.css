@@ -184,72 +184,32 @@ header {
 
 /* HEADER INTRO */
 #intro {
-	background: url('../images/bg_kotona.jpg') no-repeat 50% 100%;
+	background: url('../images/header.jpg') no-repeat 65% 100%;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 80vh;
+	height: 85vh;
 
-}
-/* HEADER VIDEO */
-
-#video {
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	z-index: 512;
-}
-
-#video-elem, #fallback {
-	display: block;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-#mute, #play {
-	position: absolute;
-	border: none;
-	outline: none;
-	background-color: transparent;
-	cursor: pointer;
-	background-repeat: no-repeat;
-}
-
-#mute {
-	top: 2em;
-	right: 2em;
-	z-index: 2048;
-	height: 30px;
-	width: 30px;
-	background-size: cover;
-}
-
-#play {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 1536;
-	background-size: contain;
-	background-position: center;
-}
-
-.muted {
-	background-image:url('../images/unmute.png');
-}
-
-.unmuted {
-	background-image:url('../images/mute.png');
 }
 
 /* MAIN */
 
 main {
 	background-color: #fff;
+}
+
+.accent, .support {
+	background: transparent;
+}
+
+.accent img {
+	margin: 15px auto 30px;
+	max-width: 320px;
+	display: block;
+}
+
+.accent--left img{
+	margin: 10px 15px;
+	max-width: 300px;
 }
 
 .support img {
@@ -363,6 +323,18 @@ footer .participants span {
 
 #background {
 	text-align: left;
+	background: url('../images/data-link-bg.png') no-repeat 100% 50%;
+	background-size: auto 700px;
+}
+
+#analytics {
+	background: url('../images/data-icon-link-bg.png') no-repeat 100% 50%;
+	background-size: auto 700px;
+}
+
+#digipalvelut {
+	background: url('../images/data-link-bg-left.png') no-repeat 0% 50%;
+	background-size: auto 700px;
 }
 
 
@@ -373,7 +345,7 @@ footer .participants span {
 	margin: 0 auto;
 	overflow: hidden;
 	color: #000;
-	background-color: #fff;
+	/* background-color: #fff; */
 }
 
 .container .left, .container .right {
@@ -478,6 +450,17 @@ footer .participants span {
 	#image2 {
 		background-image: url('../images/02-features.jpg');
 		background-position: 33% 50%;
+		position: relative;
+	}
+	#image2::after {
+		content: '';
+		background: url('../images/data-link-bg.png') no-repeat 100% 50%;
+		background-attachment: fixed;
+		position: absolute;
+		right: 0;
+		left: 0;
+		top:0;
+		bottom: 0;
 	}
 
 	#image3 {
