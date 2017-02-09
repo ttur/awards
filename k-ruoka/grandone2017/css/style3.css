@@ -1,4 +1,5 @@
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 768px) {
 	html {
 		font-size: 92.5%;
 	}
@@ -12,16 +13,21 @@
 	#intro {
 		height: 320px;
 		background-size: auto 320px;
-		background-position: 85% 0;
+		background-size: cover;
+		background-position: 85% 50%;
 		background-attachment: scroll;
 	}
 
-	#background {
+	.animation-background {
+		animation: none !important;
+	}
+	#background::after {
 		background-position: 100% 0;
 		background-size: 100% auto;
 		background-attachment: scroll;
 	}
-	#digipalvelut {
+
+	#digipalvelut::after {
 		background-position: 0 -10%;
 		background-size: 85% auto;
 	 	background-attachment: scroll;

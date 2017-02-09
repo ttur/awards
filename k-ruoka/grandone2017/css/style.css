@@ -323,10 +323,59 @@ footer .participants span {
 
 /* DATA */
 
+@-webkit-keyframes subtle-move {
+    from { transform: -webkit-translate3d(0,0,0) scale(1);}
+    to { transform: -webkit-translate3d(-10px, -20px,0) scale(1.05);}
+}
+
+@keyframes subtle-move {
+    from { transform: translate3d(0,0,0) scale(1);}
+    to { transform: translate3d(-10px, -20px,0) scale(1.05);}
+}
+
+@-webkit-keyframes subtle-move-left {
+    from { transform: -webkit-translate3d(0,0,0) scale(1);}
+    to { transform: -webkit-translate3d(30px, 23px,0) scale(1.05);}
+}
+
+@keyframes subtle-move-left {
+    from { transform: translate3d(0,0,0) scale(1);}
+    to { transform: translate3d(30px, 23px,0) scale(1.05);}
+}
+
+
 #background {
 	text-align: left;
+}
+
+
+.animated-background {
+	position: relative;
+	overflow: hidden;
+}
+.animated-background .container {
+	position: relative;
+	z-index: 2;
+}
+
+.animated-background::after{
+	animation: subtle-move 12.5s linear infinite alternate;
+	z-index: 1;
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
 	background: url('../images/data-link-bg.png') no-repeat 100% 50%;
 	background-size: auto 700px;
+}
+
+#digipalvelut::after {
+	background: url('../images/data-link-bg-left.png') no-repeat 0% 50%;
+	background-size: auto 700px;
+	animation-name: subtle-move-left;
 }
 
 #analytics {
@@ -334,10 +383,6 @@ footer .participants span {
 	background-size: auto 700px;
 }
 
-#digipalvelut {
-	background: url('../images/data-link-bg-left.png') no-repeat 0% 50%;
-	background-size: auto 700px;
-}
 
 
 
