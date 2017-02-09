@@ -147,13 +147,3 @@
 		margin: 20px auto;
 	}
 }
-
-
-@media screen and (max-width: 768px) {
-	#analytics {
-		background-position: 100% 0;
-		background-size: 460px auto;
-		padding-top: 450px;
-	}
-
-}
