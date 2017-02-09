@@ -56,6 +56,12 @@
 		width: 90%;
 	}
 
+	#intro {
+		height: 600px;
+		background-size: 100% auto;
+		background-position: 50% 0;
+	}
+
 	footer, .container {
 		padding: 3.2rem 0;
 	}
@@ -73,6 +79,10 @@
 		width: 100%;
 		height: auto;
 		margin: 0 auto;
+	}
+
+	.accent img, .figure img {
+		margin: 10px auto;
 	}
 
 	#analytics {

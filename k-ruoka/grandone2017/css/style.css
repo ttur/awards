@@ -146,7 +146,7 @@ header {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	background-color: #000;
+	background-color: #eee;
 }
 
 #title {
@@ -183,8 +183,10 @@ header {
 }
 
 /* HEADER INTRO */
+
+
 #intro {
-	background: url('../images/header.jpg') no-repeat 65% 100%;
+	background: #fff url('../images/header.jpg') no-repeat 65% 100%;
 	background-attachment: fixed;
 	background-size: cover;
 	height: 85vh;
