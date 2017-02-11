@@ -359,7 +359,7 @@ footer .participants span {
 }
 
 .animated-background::after{
-	animation: subtle-move 12.5s linear infinite alternate;
+	animation: subtle-move 10s linear infinite alternate;
 	z-index: 1;
 	content: '';
 	display: block;
