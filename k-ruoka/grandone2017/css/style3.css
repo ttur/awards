@@ -31,6 +31,7 @@
 		background-position: 0 -10%;
 		background-size: 85% auto;
 	 	background-attachment: scroll;
+	 	left: -30px;
 	}
 	#analytics {
 		background-position: 100% 0;
