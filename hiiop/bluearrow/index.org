@@ -60,7 +60,7 @@ hiiop100.fi's landing page for BlueArrow competition.
       display: none;
     }
 
-    p {you
+    p {
       margin-bottom: 1.2em;
     }
 
