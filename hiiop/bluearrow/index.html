@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<!-- 2017-03-31 pe 15:45 -->
+<meta  charset="utf-8">
+<meta  name="generator" content="Org-mode">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<link rel="stylesheet" type="text/css" href="index.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title"></h1>
+<div class="banner" style="background-image:url('./img/elderly.jpg')">
+  <h1>Hiiop!</h1>
+  <h1>Vuoden tärkein päiväon päivä vapaaehtoisena</h1>
+  <h2>Kuinka OP muutti suomalaisen vapaaehtoistyön kenttää vuonna 2017</h2>
+</div>
+
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Vapaaehtöistyötä riittää, mutta kynnys lähteä mukaan on korkea</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Hiiop on vapaaehtoistyön tori#+
+ ja kohtaamispaikka, jonka OP Ryhmä on rakentanut
+Suomen itsenäisyyden satavuotisjuhlavuoden kunniaksi mahdollistamaan
+vapaaehtoistoiminnan järjestäjiä löytämään laajemmin vapaaehtoistoiminnasta
+kiinnostuneita ihmisiä.
+</p>
+
+<p>
+Palvelusta löytää helposti sopivat tavat ja paikat tehdä
+vapaaehtoistyötä. Siellä voi etsiä vapaaehtoistehtävää teeman, paikan ja
+ajankohdan mukaan. Ihmiset voivat myös ilmoittaa sivustolla
+oman vapaaehtoistehtävänsä ja etsiä vapaaehtoisia sekä koota sivuston kautta
+ilmoittautumiset vapaaehtoistehtävään. Sisältö lisääntyy sitä mukaa, kun
+vapaaehtoistoiminnan järjestäjät ottavat sivuston käyttöönsä, mutta jo
+alkuvuoden perusteella voidaan sanoa, että suomalainen vapaaehtoistyö on saanut
+positiivisen lisäsysäyksen palvelun toimesta.
+</p>
+
+<div class="iframe-container">
+  <iframe src="https://player.vimeo.com/video/210930948?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<img class="flow-img" src="./img/flow1.png"/>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">100 vuotta vapaaehtoistyötä 100 vuotiaan Suomen kunniaksi</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Hiiop100.fi sivuston ylläpidosta sekä kehittämisestä vastaa OP Ryhmä. OP tekee
+sivustoon liittyen tiivistä yhteistyötä erilaisten vapaaehtoisjärjestöjen
+kanssa. OP on viime vuosina lanseerannut useita #suominousuun-avauksia. Sivusto
+on osa OPn Suomi 100 -tekoa ”100 vuotta vapaaehtoistyötä”. Sivuston kautta
+organisoidaan myös OPlaisten vuonna 2017 toteuttamat 12 000 vapaaehtoispäivää.
+</p>
+
+<p>
+Tällä teolla OP jatkaa yhteiskuntavastuun kantamista. Vapaaehtoistoiminnan
+kautta OP uskoo myös yhdessä tekemisen lisääntyvän – tällä on välillisesti
+vaikutusta myös suomalaisten keskinäiseen luottamukseen ja hyvinvointiin, jotka
+tukevat pitkällä aikavälillä myös talouttamme.
+</p>
+
+<img  src="./img/laptop-main.jpg"/>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Yhteinen etu on kaikkien etu</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Järjestöt ja muut vapaaehtoistoiminnan järjestäjät saavat Hiiop100.fi
+viestinnässä maksutonta, valtakunnallista näkyvyyttä. Vapaaehtoistehtäviä ja
+-kokemuksia nostetaan esiin sosiaalisessa mediassa ja sivuston avulla järjestöt
+tavoittavat uusia tekijöitä. Järjestöt voivat käyttää palvelua ilmaiseksi ja
+itsenäisesti – tavoitteena onkin madaltaa kynnystä tehdä vapaaehtoistyötä
+kokoamalla yhteen verkko-osoitteeseen suomalaisen vapaaehtoistoiminnan
+monipuoliset mahdollisuudet.
+</p>
+
+
+<img src="./img/mobile_events.jpg"/>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Platform-malli jakaa vastuut ja hyödyt</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Vapaaehtoistehtävän organisoija vastaa sivustolla julkaistavan tehtävän ja
+varsinaisen tapahtuman sisällöstä, ajantasaisuudesta ja laadusta. Ilmoittaja
+vastaa myös ilmoittamansa toiminnan organisoinnista ja
+turvallisuudesta. Hiiop100.fi tarjoaa järjestöille mahdollisuuden markkinoida
+vapaaehtoistoimintaa, mutta ei takaa ilmoitusten oikeellisuutta eikä ole
+vastuussa ilmoitusten sisällöstä. Kyseessä on siis puhtaasti kahdensuuntainen
+markkinapaikka.
+</p>
+
+<p>
+Vapaaehtoistoiminta on kaikille avointa, vapaasta tahdosta kumpuavaa palkatonta
+ja maksutonta toimintaa, joka hyödyttää kolmatta osapuolta perhe- ja
+ystäväpiirin ulkopuolella. Vapaaehtoistyöllä ei kuitenkaan korvata palkkatyötä,
+joten yritykset voivat rohkeasti lähteä mukaan yhteiseen toimintaan. Yritys voi
+antaa työntekijöilleen mahdollisuuden tehdä tietyn määrän vapaaehtoistyötä
+työajalla tai toteuttaa yhdessä henkilöstönsä kanssa vapaaehtoistempauksen
+valitsemassaan kohteessa. 
+</p>
+
+
+<img  src="./img/kids-and-youngsters.jpg"/>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">OPn motiivit alustan taustalla</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+OP kannustaa vuoden 2017 aikana jokaista työtekijäänsä päiväksi
+vapaaehtoistoimintaan. Palkallinen työpäivä on osa OPn lahjaa 100 vuotiaalle
+Suomelle. Ehdotus vapaaehtoistyön tekemisestä on lähtöisin henkilöstöltä ja
+sivuston on saanut inspiraationsa myös juhlavuoden teemasta
+”Yhdessä”. Vapaaehtoistoiminta on keskinäistä tukea, auttamista ja
+yhteiskunnallista osallistumista, joka tuottaa hyvinvointia ja yhteistä
+hyvää. Vapaaehtoistoiminnan kohteena ovat yksittäiset ihmiset, yhteisöt ja
+ympäristöt. 
+</p>
+
+<p>
+OP on ollut olemassa itsenäisyyden alusta asti. Se on kasvanut kyläyhteisöistä
+Suomen suurimmaksi finanssiryhmäksi. Osuustoiminnan myötä OP omaa vielä tänä
+päivänkin kaksoisroolin, joka on ainutlaatuisen identiteettimme perusta. OP on
+sitoutunut kulkemaan paikallisyhteisöjen rinnalla kaikissa olosuhteissa. Uusi
+vapaaehtoistyön koti hiiop100.fi on osa paikallista yhteisöllistä rooliamme.
+</p>
+
+<a class="logo-img-op" href="https://www.op.fi" target="_blank">
+  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDEgNTAiPjxjaXJjbGUgY3g9IjI1IiBjeT0iMjUiIHI9IjI1IiBmaWxsPSIjZmY2YTEwIi8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2U9IiNmZmYiIGQ9Ik04IDI1YTguNSA4LjUgMCAxIDAgMTcgMCA4LjUgOC41IDAgMSAwLTE3IDBtMTcgMGE4LjUgOC41IDAgMSAwIDE3IDAgOC41IDguNSAwIDEgMC0xNyAwbTAtMTkuNXYzOSIvPjxwYXRoIGZpbGw9IiM2ZTZlNmUiIGQ9Ik03MC41IDM5LjFjLTYuOSAwLTkuMi01LjEtOS4yLTEwLjF2LTcuOGMwLTUuMSAyLjMtMTAuMSA5LjItMTAuMSA2LjkgMCA5LjIgNS4xIDkuMiAxMC4xVjI5Yy0uMSA1LTIuNCAxMC4xLTkuMiAxMC4xem02LjYtMTcuOWMwLTQuMy0xLjctNy44LTYuNy03LjhzLTYuNyAzLjYtNi43IDcuOFYyOWMwIDQuMyAxLjcgNy44IDYuNyA3LjhzNi43LTMuNiA2LjctNy44di03Ljh6TTkyLjQgMjcuNUg4NnYxMC4zYzAgLjctLjUgMS4yLTEuMiAxLjJzLTEuMi0uNS0xLjItMS4yVjEyLjZjMC0uNy42LTEuMiAxLjItMS4ySDkyYzYuNCAwIDguNyAzLjcgOC43IDcuMnYxLjljMCA0LjEtMy4xIDctOC4zIDd6bTUuOC04LjljMC0yLjItMS40LTQuOS02LjMtNC45SDg2djExLjZoNi4zYzQgMCA1LjktMi4yIDUuOS00Ljh2LTEuOXoiLz48L3N2Zz4="/>
+</a>
+
+<a class="logo-img-futu" href="https://futurice.com" target="_blank">
+  <img src="./img/futulogo.svg"/>
+</a>
+</div>
+</div>
+</div>
+</body>
+</html>

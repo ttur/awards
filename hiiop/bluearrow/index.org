@@ -1,0 +1,341 @@
+#+title:
+#+author:
+#+options: toc:nil h:1 num:nil h:2 num:nil h:3 num:nil html-postamble:nil
+#+html_doctype: html5
+#+html_head: <link rel="stylesheet" type="text/css" href="reset.css" />
+#+html_head: <link rel="stylesheet" type="text/css" href="index.css" />
+
+** fonts :noexport:
+
+#+begin_src css :tangle yes
+  @font-face {
+    font-family: 'Helvetica Nue';
+    src: url('./fonts/helvetica-nue.eot');
+    src: url('./fonts/helvetica-nue.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/helvetica-nue.woff') format('woff'),
+         url('./fonts/helvetica-nue.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Helvetica Nue';
+    src: url('./fonts/helvetica-nue-bold.eot');
+    src: url('./fonts/helvetica-nue-bold.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/helvetica-nue-bold.woff') format('woff'),
+         url('./fonts/helvetica-nue-bold.ttf') format('truetype'),
+    font-weight: bold;
+    font-style: normal;
+  }
+#+end_src
+
+** main css                                                        :noexport:
+#+begin_src css :tangle yes
+  body {
+    font-family: "Helvetica Nue", "Arial";
+    font-size: 18px;
+    color: #555;
+    line-height: 1.3;
+  }
+
+  #content {
+    width: 100%;
+    float: left;
+    padding-bottom: 150px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  p {
+    margin-bottom: 1.2em;
+  }
+
+  img {
+    width: 100%;
+    margin:.5em 0;
+  }
+
+  h1, h2, h3, h4 {
+    padding-top: 15px;
+    padding-bottom: .7em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .figure {
+    padding: 0;
+  }
+
+#+end_src
+
+* banner :notitle:
+#+begin_html
+  <div class="banner" style="background-image:url('./img/elderly.jpg')">
+    <h1>Hiiop!</h1>
+    <h1>Vuoden tärkein päiväon päivä vapaaehtoisena</h1>
+    <h2>Kuinka OP muutti suomalaisen vapaaehtoistyön kenttää vuonna 2017</h2>
+  </div>
+#+end_html
+
+** banner css :noexport:
+#+begin_src css :tangle yes
+  .banner {
+    -ms-flex-direction: column;
+    -ms-justify-content: center;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: center;
+    margin-bottom: 1em;
+    margin-left: 10%;
+    position: relative;
+    width: 80%;
+  }
+
+  .banner:before {
+    background: rgba(0,0,0,.6);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .banner h1, .banner h2 {
+    box-sizing: border-box;
+    color: #fff;
+    max-width: 100%;
+    padding: 0 20%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .banner h2 {
+    margin-top: 1em;
+  }
+
+  @media all and (max-width: 1000px) {
+    .banner {
+      box-sizing: border-box;
+      display: block;
+      height: auto;
+      margin-left: 0;
+      padding: 3em 1em;
+      width: 100%;
+    }
+  }
+
+
+#+end_src
+
+** section css                                                     :noexport:
+#+begin_src css :tangle yes
+  .outline-2 {
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+  }
+
+  .outline-2 h2 {
+     font-weight: bold;
+  }
+
+  .outline-2 h2, .outline-2 p {
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 30%;
+  }
+
+  @media all and (max-width: 1000px) {
+    .outline-2 {
+      padding: 0 1em;
+    }
+
+    .outline-2 h2, .outline-2 p {
+      padding: 0;
+    }
+  }
+
+#+end_src
+
+* Vapaaehtöistyötä riittää, mutta kynnys lähteä mukaan on korkea
+
+Hiiop on vapaaehtoistyön tori#+
+ ja kohtaamispaikka, jonka OP Ryhmä on rakentanut
+Suomen itsenäisyyden satavuotisjuhlavuoden kunniaksi mahdollistamaan
+vapaaehtoistoiminnan järjestäjiä löytämään laajemmin vapaaehtoistoiminnasta
+kiinnostuneita ihmisiä.
+
+Palvelusta löytää helposti sopivat tavat ja paikat tehdä
+vapaaehtoistyötä. Siellä voi etsiä vapaaehtoistehtävää teeman, paikan ja
+ajankohdan mukaan. Ihmiset voivat myös ilmoittaa sivustolla
+oman vapaaehtoistehtävänsä ja etsiä vapaaehtoisia sekä koota sivuston kautta
+ilmoittautumiset vapaaehtoistehtävään. Sisältö lisääntyy sitä mukaa, kun
+vapaaehtoistoiminnan järjestäjät ottavat sivuston käyttöönsä, mutta jo
+alkuvuoden perusteella voidaan sanoa, että suomalainen vapaaehtoistyö on saanut
+positiivisen lisäsysäyksen palvelun toimesta.
+
+#+begin_html
+  <div class="iframe-container">
+    <iframe src="https://player.vimeo.com/video/210930948?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+#+end_html
+
+#+begin_html
+  <img class="flow-img" src="./img/flow1.png"/>
+#+end_html
+
+
+** iframe css                                                      :noexport:
+#+begin_src css :tangle yes
+  .iframe-container {
+    height: 1px;
+    padding-bottom: 56%;
+    position: relative;
+    width: 100%;
+  }
+
+  .iframe-container iframe {
+    height: 100% !important;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100% !important;
+  }
+
+#+end_src
+
+** flow-img css                                                    :noexport:
+#+begin_src css :tangle yes
+  img.flow-img {
+    margin-left: 12%;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  @media all and (max-width: 1000px) {
+    img.flow-img {
+      margin: 0;
+      width: 100%;
+    }
+  }
+#+end_src
+
+
+* 100 vuotta vapaaehtoistyötä 100 vuotiaan Suomen kunniaksi
+
+Hiiop100.fi sivuston ylläpidosta sekä kehittämisestä vastaa OP Ryhmä. OP tekee
+sivustoon liittyen tiivistä yhteistyötä erilaisten vapaaehtoisjärjestöjen
+kanssa. OP on viime vuosina lanseerannut useita #suominousuun-avauksia. Sivusto
+on osa OPn Suomi 100 -tekoa ”100 vuotta vapaaehtoistyötä”. Sivuston kautta
+organisoidaan myös OPlaisten vuonna 2017 toteuttamat 12 000 vapaaehtoispäivää.
+
+Tällä teolla OP jatkaa yhteiskuntavastuun kantamista. Vapaaehtoistoiminnan
+kautta OP uskoo myös yhdessä tekemisen lisääntyvän – tällä on välillisesti
+vaikutusta myös suomalaisten keskinäiseen luottamukseen ja hyvinvointiin, jotka
+tukevat pitkällä aikavälillä myös talouttamme.
+
+#+begin_html
+<img  src="./img/laptop-main.jpg"/>
+#+end_html
+
+* Yhteinen etu on kaikkien etu
+
+Järjestöt ja muut vapaaehtoistoiminnan järjestäjät saavat Hiiop100.fi
+viestinnässä maksutonta, valtakunnallista näkyvyyttä. Vapaaehtoistehtäviä ja
+-kokemuksia nostetaan esiin sosiaalisessa mediassa ja sivuston avulla järjestöt
+tavoittavat uusia tekijöitä. Järjestöt voivat käyttää palvelua ilmaiseksi ja
+itsenäisesti – tavoitteena onkin madaltaa kynnystä tehdä vapaaehtoistyötä
+kokoamalla yhteen verkko-osoitteeseen suomalaisen vapaaehtoistoiminnan
+monipuoliset mahdollisuudet.
+
+
+#+begin_html
+<img src="./img/mobile_events.jpg"/>
+#+end_html
+
+* Platform-malli jakaa vastuut ja hyödyt
+
+Vapaaehtoistehtävän organisoija vastaa sivustolla julkaistavan tehtävän ja
+varsinaisen tapahtuman sisällöstä, ajantasaisuudesta ja laadusta. Ilmoittaja
+vastaa myös ilmoittamansa toiminnan organisoinnista ja
+turvallisuudesta. Hiiop100.fi tarjoaa järjestöille mahdollisuuden markkinoida
+vapaaehtoistoimintaa, mutta ei takaa ilmoitusten oikeellisuutta eikä ole
+vastuussa ilmoitusten sisällöstä. Kyseessä on siis puhtaasti kahdensuuntainen
+markkinapaikka.
+
+Vapaaehtoistoiminta on kaikille avointa, vapaasta tahdosta kumpuavaa palkatonta
+ja maksutonta toimintaa, joka hyödyttää kolmatta osapuolta perhe- ja
+ystäväpiirin ulkopuolella. Vapaaehtoistyöllä ei kuitenkaan korvata palkkatyötä,
+joten yritykset voivat rohkeasti lähteä mukaan yhteiseen toimintaan. Yritys voi
+antaa työntekijöilleen mahdollisuuden tehdä tietyn määrän vapaaehtoistyötä
+työajalla tai toteuttaa yhdessä henkilöstönsä kanssa vapaaehtoistempauksen
+valitsemassaan kohteessa. 
+
+
+#+begin_html
+<img  src="./img/kids-and-youngsters.jpg"/>
+#+end_html
+
+* OPn motiivit alustan taustalla
+
+OP kannustaa vuoden 2017 aikana jokaista työtekijäänsä päiväksi
+vapaaehtoistoimintaan. Palkallinen työpäivä on osa OPn lahjaa 100 vuotiaalle
+Suomelle. Ehdotus vapaaehtoistyön tekemisestä on lähtöisin henkilöstöltä ja
+sivuston on saanut inspiraationsa myös juhlavuoden teemasta
+”Yhdessä”. Vapaaehtoistoiminta on keskinäistä tukea, auttamista ja
+yhteiskunnallista osallistumista, joka tuottaa hyvinvointia ja yhteistä
+hyvää. Vapaaehtoistoiminnan kohteena ovat yksittäiset ihmiset, yhteisöt ja
+ympäristöt. 
+
+OP on ollut olemassa itsenäisyyden alusta asti. Se on kasvanut kyläyhteisöistä
+Suomen suurimmaksi finanssiryhmäksi. Osuustoiminnan myötä OP omaa vielä tänä
+päivänkin kaksoisroolin, joka on ainutlaatuisen identiteettimme perusta. OP on
+sitoutunut kulkemaan paikallisyhteisöjen rinnalla kaikissa olosuhteissa. Uusi
+vapaaehtoistyön koti hiiop100.fi on osa paikallista yhteisöllistä rooliamme.
+
+#+begin_html
+  <a class="logo-img-op" href="https://www.op.fi" target="_blank">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDEgNTAiPjxjaXJjbGUgY3g9IjI1IiBjeT0iMjUiIHI9IjI1IiBmaWxsPSIjZmY2YTEwIi8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2U9IiNmZmYiIGQ9Ik04IDI1YTguNSA4LjUgMCAxIDAgMTcgMCA4LjUgOC41IDAgMSAwLTE3IDBtMTcgMGE4LjUgOC41IDAgMSAwIDE3IDAgOC41IDguNSAwIDEgMC0xNyAwbTAtMTkuNXYzOSIvPjxwYXRoIGZpbGw9IiM2ZTZlNmUiIGQ9Ik03MC41IDM5LjFjLTYuOSAwLTkuMi01LjEtOS4yLTEwLjF2LTcuOGMwLTUuMSAyLjMtMTAuMSA5LjItMTAuMSA2LjkgMCA5LjIgNS4xIDkuMiAxMC4xVjI5Yy0uMSA1LTIuNCAxMC4xLTkuMiAxMC4xem02LjYtMTcuOWMwLTQuMy0xLjctNy44LTYuNy03LjhzLTYuNyAzLjYtNi43IDcuOFYyOWMwIDQuMyAxLjcgNy44IDYuNyA3LjhzNi43LTMuNiA2LjctNy44di03Ljh6TTkyLjQgMjcuNUg4NnYxMC4zYzAgLjctLjUgMS4yLTEuMiAxLjJzLTEuMi0uNS0xLjItMS4yVjEyLjZjMC0uNy42LTEuMiAxLjItMS4ySDkyYzYuNCAwIDguNyAzLjcgOC43IDcuMnYxLjljMCA0LjEtMy4xIDctOC4zIDd6bTUuOC04LjljMC0yLjItMS40LTQuOS02LjMtNC45SDg2djExLjZoNi4zYzQgMCA1LjktMi4yIDUuOS00Ljh2LTEuOXoiLz48L3N2Zz4="/>
+  </a>
+
+  <a class="logo-img-futu" href="https://futurice.com" target="_blank">
+    <img src="./img/futulogo.svg"/>
+  </a>
+#+end_html
+
+** logo-img css :noexport:
+#+begin_src css :tangle yes
+  .logo-img-op {
+    width: 100px;
+    display: block;
+    float: left;
+    margin-left: 10%;
+    margin-right: 25px;
+  }
+
+  .logo-img-futu {
+    width: 140px;
+    display: block;
+    float: left;
+    padding-top: 10px;
+  }
+#+end_src
