@@ -1,4 +1,4 @@
-#+title:
++title:
 #+author:
 #+options: toc:nil h:1 num:nil h:2 num:nil h:3 num:nil html-postamble:nil
 #+html_doctype: html5
@@ -80,7 +80,7 @@
 #+begin_html
   <div class="banner" style="background-image:url('./img/elderly.jpg')">
     <h1>Hiiop!</h1>
-    <h1>Vuoden tärkein päiväon päivä vapaaehtoisena</h1>
+    <h1>Vuoden tärkein päivä on päivä vapaaehtoisena</h1>
     <h2>Kuinka OP muutti suomalaisen vapaaehtoistyön kenttää vuonna 2017</h2>
   </div>
 #+end_html
@@ -178,8 +178,7 @@
 
 * Vapaaehtöistyötä riittää, mutta kynnys lähteä mukaan on korkea
 
-Hiiop on vapaaehtoistyön tori#+
- ja kohtaamispaikka, jonka OP Ryhmä on rakentanut
+Hiiop on vapaaehtoistyön tori ja kohtaamispaikka, jonka OP Ryhmä on rakentanut
 Suomen itsenäisyyden satavuotisjuhlavuoden kunniaksi mahdollistamaan
 vapaaehtoistoiminnan järjestäjiä löytämään laajemmin vapaaehtoistoiminnasta
 kiinnostuneita ihmisiä.
@@ -208,7 +207,7 @@ positiivisen lisäsysäyksen palvelun toimesta.
 #+begin_src css :tangle yes
   .iframe-container {
     height: 1px;
-    padding-bottom: 56%;
+    padding-bottom: 56.5%;
     position: relative;
     width: 100%;
   }
