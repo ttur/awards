@@ -141,7 +141,7 @@ h2 {
    font-weight: bold;
 }
 
-.outline-2 h2, .outline-2 p {
+.outline-2 h2, .outline-2 p, .outline-2 .org-ul {
   box-sizing: border-box;
   padding-left: 10%;
   padding-right: 30%;
@@ -152,7 +152,7 @@ h2 {
     padding: 0 1em;
   }
 
-  .outline-2 h2, .outline-2 p {
+  .outline-2 h2, .outline-2 p, .outline-2 .org-ul {
     padding: 0;
   }
 }
@@ -183,6 +183,11 @@ img.flow-img {
     margin: 0;
     width: 100%;
   }
+}
+
+.org-ul {
+  list-style: disc;
+  margin-left: 18px;
 }
 
 .logo-img-op {

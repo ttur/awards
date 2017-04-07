@@ -177,7 +177,7 @@ hiiop100.fi's landing page for BlueArrow competition.
      font-weight: bold;
   }
 
-  .outline-2 h2, .outline-2 p {
+  .outline-2 h2, .outline-2 p, .outline-2 .org-ul {
     box-sizing: border-box;
     padding-left: 10%;
     padding-right: 30%;
@@ -188,7 +188,7 @@ hiiop100.fi's landing page for BlueArrow competition.
       padding: 0 1em;
     }
 
-    .outline-2 h2, .outline-2 p {
+    .outline-2 h2, .outline-2 p, .outline-2 .org-ul {
       padding: 0;
     }
   }
@@ -286,6 +286,23 @@ kantamista. Vapaaehtoistoiminnan kautta OP uskoo myös yhdessä
 tekemisen lisääntyvän. Valtakunnallisena suurena toimijana OP haluaa
 tehdä hyvää koko Suomelle ja kannustaa meitä kaikkia tekemään asioita
 yhdessä koko yhteisön eteen.
+
+** lists css :noexport:
+#+begin_src css :tangle ./css/main.css
+  .org-ul {
+    list-style: disc;
+    margin-left: 18px;
+  }
+#+end_src
+
+* Tulokset ensimmäiseltä vuosineljännekseltä
+
+- Lähes 300 yksityistä ja julkista vapaaehtoistehtävää tarjolla yli 20
+  paikkakunnalla eri puolilla Suomea
+- Lähes tuhat vapaaehtoispäivää eli yli 4 henkilötyövuotta
+  vapaaehtoistyötä tehty sivun välityksellä
+- Yli 23 000 uniikkia kävijää sivustolla
+- Yli 200 000 suomalaista tavoitettu sosiaalisessa mediassa
 
 #+begin_html
 <img  src="./img/laptop-main.jpg"/>
