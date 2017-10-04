@@ -1,0 +1,90 @@
+
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 92.5%;
+	}
+
+	h3 {
+		font-size: 1.6em;
+		line-height: 1.2;
+		margin-bottom: 0;
+	}
+
+	#intro {
+		height: 320px;
+		background-size: auto 320px;
+		background-size: cover;
+		background-position: 85% 50%;
+		background-attachment: scroll;
+	}
+
+	.animation-background {
+		animation: none !important;
+	}
+	#background::after {
+		background-position: 100% 0;
+		background-size: 100% auto;
+		background-attachment: scroll;
+	}
+
+	#digipalvelut::after {
+		background-position: 0 -10%;
+		background-size: 85% auto;
+	 	background-attachment: scroll;
+	 	left: -30px;
+	}
+	#analytics {
+		background-position: 100% 0;
+		background-size: 105% auto;
+		padding-top: 420px;
+	}
+
+
+	.bgimage {
+		padding-top: 75%;
+		background-attachment: scroll;
+	}
+
+	#image1 {
+		padding-top: 60%;
+	}
+
+	.container figure {
+		margin-bottom: 2rem !important;
+	}
+
+	.container figure img {
+		max-width: 200px;
+	}
+
+	footer #credits > div{
+		font-size: 110%;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 85%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	html {
+		font-size: 75%;
+	}
+}
+/*
+
+@media screen and (max-width: 480px) {
+	html {
+		font-size: 68.75%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+*/
