@@ -1,0 +1,21 @@
+
+@font-face {
+	font-family: 'custom_5862';
+	font-style:  normal;
+	font-weight: 300;
+	src: url("../../fonts/5a01ce2c1de1890ba0c4b148_n3.woff") format('woff')
+}
+
+@font-face {
+	font-family: 'custom_5862';
+	font-style:  normal;
+	font-weight: 400;
+	src: url("../../fonts/5a01ce2c1de1890ba0c4b148_n4.woff") format('woff')
+}
+
+@font-face {
+	font-family: 'custom_5862';
+	font-style:  normal;
+	font-weight: 700;
+	src: url("../../fonts/5a01ce2c1de1890ba0c4b148_n7.woff") format('woff')
+}
