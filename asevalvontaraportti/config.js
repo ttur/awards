@@ -1,9 +1,6 @@
-
 (function(RM, undefined) {
-
-	RM.config = {
-		root: "/",
-		pushState: true
-	}
-
+  RM.config = {
+    root: "/asevalvontaraportti",
+    pushState: true
+  };
 })(RM);
