@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://awards-portfolio.com/asevalvontaraportti/sitemap.xml
+Sitemap: http://awards-portfolio.com/sitemap.xml
