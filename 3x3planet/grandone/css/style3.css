@@ -1,0 +1,33 @@
+@media screen and (max-width: 800px) {
+	html {
+		font-size: 87.5%;
+	}
+
+	.bgimage {
+		padding-top: 133%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 81.25%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	html {
+		font-size: 75%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	html {
+		font-size: 68.75%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	html {
+		font-size: 62.5%;
+	}
+}

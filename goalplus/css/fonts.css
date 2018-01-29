@@ -1,0 +1,28 @@
+/* FONTS */
+
+/* Body regular */
+
+@font-face {
+	font-family: Body-Regular;
+	src:url('../fonts/FS-Emeric-Book.eot');
+	src:url('../fonts/FS-Emeric-Book.woff');
+	src:url('../fonts/FS-Emeric-Book.otf');
+}
+
+/* Body bold */
+
+@font-face {
+	font-family: Body-Bold;
+	src:url('../fonts/FS-Emeric-SemiBold.eot');
+	src:url('../fonts/FS-Emeric-SemiBold.woff');
+	src:url('../fonts/FS-Emeric-SemiBold.otf');
+}
+
+/* Title */
+
+@font-face {
+	font-family: Title;
+	src:url('../fonts/FS-Emeric-Bold.eot');
+	src:url('../fonts/FS-Emeric-Bold.woff');
+	src:url('../fonts/FS-Emeric-Bold.otf');
+}
